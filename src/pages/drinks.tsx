@@ -1,5 +1,4 @@
 import Head from "next/head"
-import { Layout } from "../components/Layout"
 const Drinks = () => {
    return (
        <div>
@@ -9,7 +8,6 @@ const Drinks = () => {
       </Head>
 
       <main>
-        <Layout/>
         <h1 className="">hello world</h1>
       </main>
     </div>
