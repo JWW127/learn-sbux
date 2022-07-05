@@ -2,6 +2,8 @@ import Head from "next/head";
 import { PosTopNav } from "../components/PosTopNav";
 import { OrderBox } from "../components/OrderBox";
 import { OrderBoxMenu } from "../components/OrderBoxMenu";
+import { DrinkSizeMenu } from "../components/DrinkSizeMenu";
+import { MainMenu } from "../components/MainMenu";
 
 const Pos = () => {
   return (
@@ -19,7 +21,7 @@ const Pos = () => {
             <OrderBoxMenu />
           </div>
           <div className="border-l-8 border-l-stone-500 basis-2/3">
-            something2
+            <MainMenu />
           </div>
         </div>
       </main>
