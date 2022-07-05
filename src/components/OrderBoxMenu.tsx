@@ -1,3 +1,5 @@
+import { RiLock2Fill} from "react-icons/ri";
+
 export const OrderBoxMenu = () => {
   return (
     <div className="flex flex-wrap font-semibold bg-stone-500 h-2/5">
@@ -29,8 +31,8 @@ export const OrderBoxMenu = () => {
           <button className="w-[10vw] rounded-md bg-green-200 drop-shadow-xl shadow-stone-100 shadow-inner active:bg-green-300 active:shadow-stone-500">
             Discount
           </button>
-          <button className="w-[4vw] mx-[3vw] bg-red-400 rounded-[50%] shadow-inner drop-shadow-xl shadow-stone-200 active:bg-red-500 active:shadow-stone-500">
-            Lock
+          <button className="w-[4vw] mx-[3vw] bg-gradient-to-r from-red-600 via-red-300 to-red-600 flex justify-center items-center rounded-[50%] shadow-inner drop-shadow-xl shadow-stone-200 active:bg-gradient-to-b active:shadow-stone-500">
+            <RiLock2Fill className="text-3xl" />
           </button>
           <button className="w-[10vw] rounded-md bg-sky-100 drop-shadow-xl shadow-stone-200 shadow-inner active:bg-sky-200 active:shadow-stone-500">
             To Go
