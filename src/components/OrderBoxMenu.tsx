@@ -1,4 +1,4 @@
-import { RiLock2Fill} from "react-icons/ri";
+import { RiLock2Fill } from "react-icons/ri";
 
 export const OrderBoxMenu = () => {
   return (
