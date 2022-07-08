@@ -2,14 +2,13 @@ import Head from "next/head";
 import { PosTopNav } from "../components/PosTopNav";
 import { OrderBox } from "../components/OrderBox";
 import { OrderBoxMenu } from "../components/OrderBoxMenu";
-import { DrinkSizeMenu } from "../components/DrinkSizeMenu";
 import { MainMenu } from "../components/MainMenu";
 
 const Pos = () => {
   return (
     <>
       <Head>
-        <title>Learn Sbux</title>
+        <title>POS Training</title>
         <meta name="learn sbux workflow" content="sbux training app" />
       </Head>
 
