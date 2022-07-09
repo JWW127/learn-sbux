@@ -18,13 +18,13 @@ export const PosSideNav = () => {
           <li className="flex flex-col italic basis-1/5">Size <div className="h-6 border-2 border-gray-600 rounded-sm w-18"></div></li>
         </ul>
       </button>
-       <button className="flex flex-col items-center justify-center italic shadow-md rounded-tr-xl bg-stone-400 rounded-br-xl basis-1/6" onClick={() => getSyrupMenu()}>
+       <button className="flex flex-col items-center justify-center italic shadow-md rounded-tr-xl bg-stone-400 active:bg-stone-200 rounded-br-xl basis-1/6" onClick={() => getSyrupMenu()}>
         Syrup<div className="w-2/5 h-6 border-2 border-gray-600 rounded-sm"></div>
       </button>
-       <button className="flex flex-col items-center justify-center italic shadow-md rounded-tr-xl bg-stone-400 rounded-br-xl basis-1/6" onClick={() => getMilkMenu()}>
+       <button className="flex flex-col items-center justify-center italic shadow-md rounded-tr-xl bg-stone-400 active:bg-stone-200 rounded-br-xl basis-1/6" onClick={() => getMilkMenu()}>
         Milk<div className="w-2/5 h-6 border-2 border-gray-600 rounded-sm"></div>
       </button>
-       <button className="flex flex-col items-center justify-center italic shadow-md rounded-tr-xl bg-stone-400 rounded-br-xl basis-1/6" onClick={() => getCustomMenu()}>
+       <button className="flex flex-col items-center justify-center italic shadow-md rounded-tr-xl bg-stone-400 active:bg-stone-200 rounded-br-xl basis-1/6" onClick={() => getCustomMenu()}>
         Custom<div className="w-2/5 h-6 border-2 border-gray-600 rounded-sm"></div>
       </button>
     </div>
