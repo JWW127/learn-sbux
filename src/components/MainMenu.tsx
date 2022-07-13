@@ -5,6 +5,11 @@ import { PosSideNav } from "./PosSideNav";
 import { SyrupMenu } from "./SyrupMenu";
 import { MilkMenu } from "./MilkMenu";
 import { CustomMenu } from "./CustomMenu";
+import { BlendedMenu } from "./BlendedMenu";
+import { BrewMenu } from "./BrewMenu";
+import { EspMenu } from "./EspMenu";
+import { OtherMenu } from "./OtherMenu";
+import { TeaMenu } from "./TeaMenu";
 
 export const MainMenu = () => {
   const menu = useStore((state) => state.menu);
@@ -22,6 +27,21 @@ export const MainMenu = () => {
       break;
     case "customMenu":
       currentMenu = <CustomMenu />;
+      break;
+    case "blendedMenu":
+      currentMenu = <BlendedMenu />;
+      break;
+    case "brewMenu":
+      currentMenu = <BrewMenu />;
+      break;
+    case "espMenu":
+      currentMenu = <EspMenu />;
+      break;
+    case "otherMenu":
+      currentMenu = <OtherMenu />;
+      break;
+    case "teaMenu":
+      currentMenu = <TeaMenu />;
       break;
     default:
       currentMenu = <DrinkSizeMenu />;

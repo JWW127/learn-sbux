@@ -6,6 +6,11 @@ type State = {
   syrupMenu: () => void;
   milkMenu: () => void;
   customMenu: () => void;
+  blendedMenu: () => void;
+  brewMenu: () => void;
+  otherMenu: () => void;
+  espMenu: () => void;
+  teaMenu: () => void;
 };
 
 export const useStore = create<State>((set) => ({
@@ -14,4 +19,9 @@ export const useStore = create<State>((set) => ({
   syrupMenu: () => set({ menu: "syrupMenu" }),
   milkMenu: () => set({ menu: "milkMenu" }),
   customMenu: () => set({ menu: "customMenu" }),
+  blendedMenu: () => set({ menu: "blendedMenu" }),
+  brewMenu: () => set({ menu: "brewMenu" }),
+  espMenu: () => set({ menu: "espMenu" }),
+  otherMenu: () => set({ menu: "otherMenu" }),
+  teaMenu: () => set({ menu: "teaMenu" }),
 }));
