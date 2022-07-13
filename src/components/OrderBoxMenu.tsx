@@ -21,7 +21,7 @@ export const OrderBoxMenu = () => {
           {false ? `total` : `$0.00`}
         </button>
         <div className="flex flex-wrap justify-between pt-2 gap-2 basis-full h-1/2">
-          <div className="flex justify-between gap-3">
+          <div className="flex justify-between basis-full">
           {" "}
           <button className="w-[10vw] bg-red-500 rounded-md text-white active:bg-red-600 drop-shadow-xl shadow-stone-200 shadow-inner active:shadow-stone-500">
             void item
@@ -33,7 +33,7 @@ export const OrderBoxMenu = () => {
             Discount
           </button>
           </div>
-                      <div className="flex justify-between gap-3">
+                      <div className="flex justify-between basis-full">
           <button className="w-[4vw] mx-[3vw] bg-gradient-to-r from-red-600 via-red-300 to-red-600 flex justify-center items-center rounded-[50%] shadow-inner drop-shadow-xl shadow-stone-200 active:bg-gradient-to-b active:shadow-stone-500">
             <RiLock2Fill className="text-3xl" />
           </button>

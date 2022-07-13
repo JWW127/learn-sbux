@@ -29,7 +29,7 @@ export const MainMenu = () => {
   }
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full ">
       <div className="flex flex-row h-4/5">
         {currentMenu}
         <PosSideNav />
