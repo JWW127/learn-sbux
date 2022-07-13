@@ -1,28 +1,32 @@
 export const PosTopNav = () => {
+
+  const darkTopBtns = "w-[10vw] h-[80%] shadow-inner shadow-lg shadow-stone-200  bg-stone-800 active:bg-stone-900 active:shadow-stone-900 rounded-xl text-white"
+  const greenTopBtns = "w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-green-600 active:bg-stone-300 active:shadow-gray-900 rounded-[50%]"
+
   return (
     <div className="h-[10vh] basis-full bg-stone-500 flex justify-around items-center text-lg">
-      <button className="w-[10vw] h-[80%] shadow-inner shadow-lg shadow-stone-200  bg-stone-800 active:bg-stone-900 active:shadow-stone-900 rounded-xl text-white">
+      <button className={darkTopBtns}>
         Order
       </button>
-      <button className="w-[10vw] h-[80%] shadow-inner shadow-lg shadow-stone-200  bg-stone-800 active:bg-stone-900 active:shadow-stone-900 rounded-xl text-white">
+      <button className={darkTopBtns}>
         Tender
       </button>
-      <button className="w-[10vw] h-[80%] shadow-inner shadow-lg shadow-stone-200  bg-stone-800 active:bg-stone-900 active:shadow-stone-900 rounded-xl text-white">
+      <button className={darkTopBtns}>
         Functions
       </button>
-      <button className="w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-green-600 active:bg-green-700 active:shadow-gray-900 rounded-[50%]">
+      <button className={greenTopBtns}>
         Misc
       </button>
-      <button className="w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-green-600 active:bg-green-700 active:shadow-gray-900 rounded-[50%]">
+      <button className={greenTopBtns}>
         Beans
       </button>
-      <button className="w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-green-600 active:bg-green-700 active:shadow-gray-900 rounded-[50%]">
+      <button className={greenTopBtns}>
         RTD&E
       </button>
-      <button className="w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-green-600 active:bg-green-700 active:shadow-gray-900 rounded-[50%]">
+      <button className={greenTopBtns}>
         Food
       </button>
-      <button className="w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-stone-200 active:bg-stone-400 active:shadow-gray-900 rounded-[50%]">
+      <button className={greenTopBtns}>
         Drink
       </button>
     </div>
