@@ -8,7 +8,7 @@ export const PosBottomNav = () => {
      const getTeaMenu = useStore((state) => state.teaMenu)  
 
   return (
-    <div className="flex flex-wrap h-1/5 bg-stone-500">
+    <div className="flex flex-wrap pb-2 h-1/5 bg-stone-500">
       <div className="flex justify-center h-14 basis-full">
         <div className="flex justify-center gap-2 basis-5/6">
           <button className="w-[8vw] bg-stone-400" onClick={() => getBrewMenu()}>Brewed</button>
