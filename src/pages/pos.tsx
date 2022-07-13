@@ -13,13 +13,13 @@ const Pos = () => {
       </Head>
 
       <main>
-        <div className="flex flex-wrap content-start w-full border-2 border-green-900">
+        <div className="flex flex-wrap content-start w-full">
           <PosTopNav />
-          <div className="h-[84vh] border-x-8 border-x-stone-500 basis-1/3 flex-col">
+          <div className="h-[86vh] sm:border-x-2 lg:border-x-8 border-x-stone-500 basis-1/3 flex-col">
             <OrderBox />
             <OrderBoxMenu />
           </div>
-          <div className="border-l-8 border-l-stone-500 basis-2/3">
+          <div className="sm:border-l-2 lg:border-l-8 border-l-stone-500 basis-2/3">
             <MainMenu />
           </div>
         </div>
