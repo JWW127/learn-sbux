@@ -15,16 +15,16 @@ export const Layout = (props: LayoutProps) => {
           </Link>
         </h2>
         <li className="hover:text-yellow-400">
-          <Link href="/pos">
-            <a>POS</a>
-          </Link>
-        </li>
-        <li className="hover:text-yellow-400">
           <Link href="/drinks">
             <a>DRINKS</a>
           </Link>
         </li>
-        <li className="hover:text-yellow-400">OTHER</li>
+          <li className="hover:text-yellow-400">
+            <Link href="/pos">
+              <a>POS</a>
+            </Link>
+          </li>
+        <li className="hover:text-yellow-400">Test</li>
       </ul>
     </nav>
         {props.children}
