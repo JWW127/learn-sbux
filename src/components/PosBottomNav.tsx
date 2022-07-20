@@ -1,6 +1,7 @@
 import { useStore } from "./../lib/store";
 
 export const PosBottomNav = () => {
+  const menu = useStore((state) => state.menu)
   const getBrewMenu = useStore((state) => state.brewMenu);
   const getBlendedMenu = useStore((state) => state.blendedMenu);
   const getEspMenu = useStore((state) => state.espMenu);
@@ -8,27 +9,28 @@ export const PosBottomNav = () => {
   const getTeaMenu = useStore((state) => state.teaMenu);
 
   const btnDark =
-    "w-[10vw] shadow-inner shadow-lg shadow-stone-200  bg-zinc-700 active:bg-stone-900 active:shadow-stone-900 rounded-lg text-white";
+    "w-[10vw] shadow-inner shadow-lg shadow-stone-200  bg-zinc-700 active:bg-stone-900 active:shadow-stone-900 rounded-lg text-white sm:text-sm";
 
   const bottomTabs = "w-[8vw] bg-stone-400 active:bg-stone-200";
+  const bottomTabsActive = "w-[8vw] bg-stone-300 active:bg-stone-200 shadow-xl shadow-stone700";
 
   return (
     <div className="flex flex-wrap pb-2 h-1/5 bg-stone-500">
       <div className="flex justify-center h-14 basis-full">
         <div className="flex justify-center gap-2 basis-5/6">
-          <button className={bottomTabs} onClick={() => getBrewMenu()}>
+          <button className={menu === "brewMenu" ? bottomTabsActive: bottomTabs} onClick={() => getBrewMenu()}>
             Brewed
           </button>
-          <button className={bottomTabs} onClick={() => getEspMenu()}>
+          <button className={menu === "espMenu" ? bottomTabsActive: bottomTabs} onClick={() => getEspMenu()}>
             Espresso
           </button>
-          <button className={bottomTabs} onClick={() => getBlendedMenu()}>
+          <button className={menu === "blendedMenu" ? bottomTabsActive: bottomTabs} onClick={() => getBlendedMenu()}>
             Blended
           </button>
-          <button className={bottomTabs} onClick={() => getTeaMenu()}>
+          <button className={menu === "teaMenu" ? bottomTabsActive: bottomTabs} onClick={() => getTeaMenu()}>
             Tea
           </button>
-          <button className={bottomTabs} onClick={() => getOtherMenu()}>
+          <button className={menu === "otherMenu" ? bottomTabsActive: bottomTabs} onClick={() => getOtherMenu()}>
             Other
           </button>
         </div>
