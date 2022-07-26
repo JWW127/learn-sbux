@@ -9,7 +9,7 @@ export const PosBottomNav = () => {
   const getTeaMenu = useStore((state) => state.teaMenu);
 
   const btnDark =
-    "w-[10vw] shadow-inner shadow-lg shadow-stone-200  bg-zinc-700 active:bg-stone-900 active:shadow-stone-900 rounded-lg text-white sm:text-sm";
+    "w-[10vw] flex flex-wrap justify-around p-2 items-center shadow-inner shadow-lg shadow-stone-200  bg-zinc-700 active:bg-stone-900 active:shadow-stone-900 rounded-lg text-white sm:text-sm";
 
   const bottomTabs = "w-[8vw] bg-stone-400 active:bg-stone-200";
   const bottomTabsActive = "w-[8vw] bg-stone-300 active:bg-stone-200 shadow-xl shadow-stone700";

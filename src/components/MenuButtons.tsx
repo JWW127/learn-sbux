@@ -1,3 +1,5 @@
+import {useStore} from '../lib/store'
+
 interface BtnProps {
   label: string;
   design?: string;
@@ -21,7 +23,7 @@ export const PurpleBtn = (props: BtnProps) => {
 };
 export const RoseBtn = (props: BtnProps) => {
   return (
-    <button className="border-2 border-gray-900 rounded-lg shadow-lg shadow-inner bg-rose-300 shadow-stone-200 active:shadow-stone-900 active:bg-rose-400 basis-1/6">
+    <button className="border-2 border-gray-900 rounded-lg shadow-lg shadow-inner bg-gradient-to-b from-rose-300 to-rose-100 shadow-stone-200 active:shadow-stone-900 active:to-rose-400 basis-1/6">
       {props.label}
     </button>
   );
@@ -52,8 +54,10 @@ export const OrangeBtn = (props: BtnProps) => {
 };
 
 export const TealBtn = (props: BtnProps) => {
+    const icedDrink = useStore((state) => state.icedDrink);
+
   return (
-    <button className="bg-teal-500 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-teal-600 basis-1/6">
+    <button className="bg-teal-500 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-teal-600 basis-1/6" onClick={() => icedDrink()}>
       {props.label}
     </button>
   );

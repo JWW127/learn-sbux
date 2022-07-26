@@ -20,7 +20,7 @@ export const OrderBoxMenu = () => {
         <button className="basis-1/4 w-[6vw] bg-stone-700 rounded-md text-white shadow-inner drop-shadow-xl shadow-stone-200 active:bg-stone-800 active:shadow-stone-500">
           {false ? `total` : `$0.00`}
         </button>
-        <div className="flex flex-wrap justify-between pt-2 gap-6 basis-full h-1/2">
+        <div className="flex flex-wrap justify-between pt-4 gap-4 basis-full h-1/2">
           <div className="flex justify-between basis-full">
             {" "}
             <button className="w-[10vw] bg-red-500 rounded-md text-white active:bg-red-600 drop-shadow-xl shadow-stone-200 shadow-inner active:shadow-stone-500">

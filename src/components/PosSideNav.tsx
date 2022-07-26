@@ -2,6 +2,7 @@ import { useStore } from "./../lib/store";
 
 export const PosSideNav = () => {
   const menu = useStore((state) => state.menu);
+  const drink = useStore((state) => state.currentDrink)
 
   const getDrinkMenu = useStore((state) => state.drinkSizeMenu);
   const getSyrupMenu = useStore((state) => state.syrupMenu);
@@ -28,7 +29,7 @@ export const PosSideNav = () => {
       <button className={dsm} onClick={() => getDrinkMenu()}>
         <ul className="flex flex-col items-center justify-between w-20 h-full p-4">
           <li className="flex flex-wrap items-center justify-center w-20 italic gap-1 text-md font-ultralight basis-1/5">
-            <div className="flex items-center justify-center w-5 h-5 border-2 border-gray-600 "></div>Iced
+            <div className="flex items-center justify-center w-5 h-5 border-2 border-gray-600 ">{drink.iced === "Iced"? "x": ""}</div>Iced
           </li>
           <li className="flex flex-col italic basis-1/5">
             Decaf{" "}
