@@ -25,7 +25,7 @@ export const PosSideNav = () => {
   const cm = menu === "customMenu" ? menuBtnActive : menuBtn; //custommenu
 
   return (
-    <div className="bg-stone-500 basis-[15%] flex flex-col gap-1 pr-4">
+    <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4">
       <button className={dsm} onClick={() => getDrinkMenu()}>
         <ul className="flex flex-col items-center justify-between w-20 h-full p-4">
           <li className="flex flex-wrap items-center justify-center w-20 italic gap-1 text-md font-ultralight basis-1/5">

@@ -4,7 +4,7 @@ export const PosTopNav = () => {
   const greenTopBtns = "w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-green-600 active:bg-stone-300 active:shadow-gray-900 rounded-[50%]"
 
   return (
-    <div className="h-[10vh] basis-full bg-stone-500 flex justify-around items-center text-lg">
+    <div className="h-[10vh] basis-full bg-neutral-500 flex justify-around items-center text-lg">
       <button className={darkTopBtns}>
         Order
       </button>

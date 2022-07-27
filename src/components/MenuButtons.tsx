@@ -1,8 +1,9 @@
-import {useStore} from '../lib/store'
+import { useStore } from "../lib/store";
 
 interface BtnProps {
   label: string;
   design?: string;
+  click?: () => void;
 }
 
 //These buttons are only to be used with the main menu like DrinkSizeMenu, BlendedMenu, EspMenu etc. cannot be used with nav or menubox
@@ -45,21 +46,62 @@ export const GreenBtn = (props: BtnProps) => {
   );
 };
 
+export const BlackBtn = (props: BtnProps) => {
+  return (
+    <button className="text-white border-2 border-gray-900 rounded-lg shadow-lg shadow-inner bg-gradient-to-b from-neutral-500 to-neutral-900 shadow-stone-200 active:shadow-stone-900 active:bg-neutral-500 basis-1/6">
+      {props.label}
+    </button>
+  );
+};
+
+export const LimeBtn = (props: BtnProps) => {
+  return (
+    <button className="border-2 border-gray-900 rounded-lg shadow-lg shadow-inner bg-lime-200 shadow-stone-200 active:shadow-stone-900 active:bg-lime-300 basis-1/6">
+      {props.label}
+    </button>
+  );
+};
+
 export const OrangeBtn = (props: BtnProps) => {
   return (
-    <button className="bg-orange-200 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-orange-400 basis-1/6">
+    <button
+      className="bg-orange-200 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-orange-400 basis-1/6"
+      onClick={props.click}
+    >
+      {props.label}
+    </button>
+  );
+};
+
+export const BlueBtn = (props: BtnProps) => {
+  return (
+    <button
+      className="bg-blue-100 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-blue-400 basis-1/6"
+      onClick={props.click}
+    >
+      {props.label}
+    </button>
+  );
+};
+
+export const LightAmberBtn = (props: BtnProps) => {
+  return (
+    <button
+      className="border-2 border-gray-900 rounded-lg shadow-lg shadow-inner bg-amber-100 shadow-stone-200 active:shadow-stone-900 active:bg-amber-400 basis-1/6"
+      onClick={props.click}
+    >
       {props.label}
     </button>
   );
 };
 
 export const TealBtn = (props: BtnProps) => {
-    const icedDrink = useStore((state) => state.icedDrink);
-
   return (
-    <button className="bg-teal-500 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-teal-600 basis-1/6" onClick={() => icedDrink()}>
+    <button
+      className="bg-teal-500 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-teal-600 basis-1/6"
+      onClick={props.click}
+    >
       {props.label}
     </button>
   );
 };
-

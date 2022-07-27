@@ -9,13 +9,13 @@ export const PosBottomNav = () => {
   const getTeaMenu = useStore((state) => state.teaMenu);
 
   const btnDark =
-    "w-[10vw] flex flex-wrap justify-around p-2 items-center shadow-inner shadow-lg shadow-stone-200  bg-zinc-700 active:bg-stone-900 active:shadow-stone-900 rounded-lg text-white sm:text-sm";
+    "w-[10vw] flex flex-wrap justify-around p-2 items-center bg-gradient-to-b from-zinc-600 to-zinc-800 active:from-zinc-800 active:to-zinc-900 border-2 border-zinc-900 active:shadow-stone-900 rounded-lg text-white sm:text-sm";
 
   const bottomTabs = "w-[8vw] bg-stone-400 active:bg-stone-200";
   const bottomTabsActive = "w-[8vw] bg-stone-300 active:bg-stone-200 shadow-xl shadow-stone700";
 
   return (
-    <div className="flex flex-wrap pb-2 h-1/5 bg-stone-500">
+    <div className="flex flex-wrap pb-2 h-1/5 bg-neutral-500">
       <div className="flex justify-center h-14 basis-full">
         <div className="flex justify-center gap-2 basis-5/6">
           <button className={menu === "brewMenu" ? bottomTabsActive: bottomTabs} onClick={() => getBrewMenu()}>

@@ -7,12 +7,15 @@ import {
   TealBtn,
   YellowBtn,
 } from "./MenuButtons";
+import { useStore } from "../lib/store";
 
 export const DrinkSizeMenu = () => {
+      const icedDrink = useStore((state) => state.icedDrink);
+
   return (
     <div className="h-full basis-[85%] py-4 pr-4 bg-white flex flex-col">
       <div className="flex flex-wrap justify-around pt-5 pb-14 gap-y-6 gap-x-1 basis-2/5">
-        <TealBtn label="Iced" />
+        <TealBtn label="Iced" click={icedDrink}/>
         <OffBtnComponent label="" />
         <YellowBtn label="Blonde" />
         <OrangeBtn label="Decaf" />
