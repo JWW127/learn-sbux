@@ -22,6 +22,7 @@ export const PurpleBtn = (props: BtnProps) => {
     </button>
   );
 };
+
 export const RoseBtn = (props: BtnProps) => {
   return (
     <button className="border-2 border-gray-900 rounded-lg shadow-lg shadow-inner bg-gradient-to-b from-rose-300 to-rose-100 shadow-stone-200 active:shadow-stone-900 active:to-rose-400 basis-1/6">
@@ -76,7 +77,7 @@ export const OrangeBtn = (props: BtnProps) => {
 export const BlueBtn = (props: BtnProps) => {
   return (
     <button
-      className="bg-blue-100 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-blue-400 basis-1/6"
+      className="bg-blue-200 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-blue-400 basis-1/6"
       onClick={props.click}
     >
       {props.label}
@@ -84,6 +85,16 @@ export const BlueBtn = (props: BtnProps) => {
   );
 };
 
+export const SkyBtn = (props: BtnProps) => {
+  return (
+    <button
+      className="border-2 border-gray-900 rounded-lg shadow-lg shadow-inner bg-sky-100 shadow-stone-200 active:shadow-stone-900 active:bg-sky-400 basis-1/6"
+      onClick={props.click}
+    >
+      {props.label}
+    </button>
+  );
+};
 export const LightAmberBtn = (props: BtnProps) => {
   return (
     <button
