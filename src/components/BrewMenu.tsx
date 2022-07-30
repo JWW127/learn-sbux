@@ -12,9 +12,9 @@ export const BrewMenu = () => {
   return (
     <div className="h-full basis-[85%] bg-white flex flex-wrap">
       <div className="flex flex-wrap justify-around py-1 gap-x-1 gap-y-4">
-        <BlackBtn label="Extra" />
-        <BlackBtn label="Extra" />
-        <BlackBtn label="Extra" />
+        <BlackBtn label="Clover" />
+        <BlackBtn label="Reserve" />
+        <BlackBtn label="Draft" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OrangeBtn label="Pour Over"/>
