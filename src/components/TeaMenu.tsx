@@ -1,10 +1,6 @@
 import {
-  PurpleBtn,
   YellowBtn,
-  OrangeBtn,
-  RoseBtn,
   SkyBtn,
-  LightAmberBtn,
   OffBtnComponent,
   BlackBtn,
   GreenBtn,
