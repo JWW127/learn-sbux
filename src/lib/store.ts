@@ -1,17 +1,19 @@
 import create from "zustand";
 
 interface CurrentDrink {
-  iced?: string;
-  decaf?: string;
-  shots?: number;
+  iced: string;
+  decaf: string;
+  shots: number;
   size: string;
-  pull?: string;
-  blonde?: boolean;
-  affogato?: boolean;
+  pull: string;
+  blonde: boolean;
+  affogato: boolean;
 }
 
 type State = {
+  category: string;
   menu: string;
+  currentDrink: Partial<CurrentDrink>;
   drinkSizeMenu: () => void;
   syrupMenu: () => void;
   milkMenu: () => void;
@@ -21,14 +23,18 @@ type State = {
   otherMenu: () => void;
   espMenu: () => void;
   teaMenu: () => void;
-  currentDrink: Partial<CurrentDrink>;
   icedDrink: () => void;
   hotDrink: () => void;
+  drinkCategory: () => void;
+  foodCategory: () => void;
 };
 
 export const useStore = create<State>((set) => ({
+  category: "DrinksTab",
   menu: "drinkSizeMenu",
   currentDrink: {},
+  drinkCategory: () => set({ category: "DrinksTab" }),
+  foodCategory: () => set({ category: "FoodTab" }),
   drinkSizeMenu: () => set({ menu: "drinkSizeMenu" }),
   syrupMenu: () => set({ menu: "syrupMenu" }),
   milkMenu: () => set({ menu: "milkMenu" }),

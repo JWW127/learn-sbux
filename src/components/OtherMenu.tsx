@@ -20,7 +20,7 @@ export const OtherMenu = () => {
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <GreenBtn label="Syrup Creme"/>
-        <GreenBtn label="Vanilla Creme"/>
+        <GreenBtn label="Vanilla CRM"/>
         <GreenBtn label="Cinn Creme"/>
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
@@ -37,15 +37,15 @@ export const OtherMenu = () => {
         <PurpleBtn label="Kiwi"/>
         <LightAmberBtn label="Pine Matcha"/>
         <LightAmberBtn label="Guava PSN"/>
-        <PurpleBtn label="VBERRY LMNDE"/>
+        <PurpleBtn label="VBRY LMNDE"/>
         <PurpleBtn label="Acai LMNDE"/>
-        <PurpleBtn label="Mango LMNDE"/>
+        <PurpleBtn label="MNGO LMNDE"/>
         <PurpleBtn label="Kiwi LMNDE"/>
         <OffBtnComponent label="" />
         <SkyBtn label="SPRKL WTR" />
         <PurpleBtn label="Violet"/>
         <PurpleBtn label="Pink"/>
-        <PurpleBtn label="Dragon Drink"/>
+        <PurpleBtn label="DRG Drink"/>
         <PurpleBtn label="Star"/>
         <OffBtnComponent label="" />
         <SkyBtn label="Water" />
