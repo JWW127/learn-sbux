@@ -6,7 +6,7 @@ import {
   GreenBtn,
 } from "./MenuButtons";
 
-export const TeaMenu = () => {
+ const TeaMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
       {" "}
@@ -50,3 +50,5 @@ export const TeaMenu = () => {
     </div>
   );
 };
+
+export default TeaMenu

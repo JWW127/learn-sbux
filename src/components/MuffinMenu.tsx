@@ -4,7 +4,8 @@ import {
   OffBtnComponent,
   BlackBtn,
 } from "./MenuButtons";
-export const MuffinMenu = () => {
+
+ const MuffinMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
           <div className="flex flex-wrap justify-around w-full py-1 text-sm gap-x-1 gap-y-4">
@@ -52,3 +53,5 @@ export const MuffinMenu = () => {
     </div>
   );
 };
+
+export default MuffinMenu

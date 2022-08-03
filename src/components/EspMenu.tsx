@@ -1,5 +1,6 @@
 import { PurpleBtn, YellowBtn, OrangeBtn, RoseBtn, SkyBtn, LightAmberBtn, OffBtnComponent, BlackBtn } from "./MenuButtons";
-export const EspMenu = () => {
+
+ const EspMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
       {" "}
@@ -43,3 +44,5 @@ export const EspMenu = () => {
     </div>
   );
 };
+
+export default EspMenu

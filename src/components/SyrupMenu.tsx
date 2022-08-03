@@ -1,5 +1,6 @@
 import { BlackBtn, YellowBtn,BlueBtn, LimeBtn, LightAmberBtn, OffBtnComponent, PurpleBtn } from "./MenuButtons";
-export const SyrupMenu = () => {
+
+const SyrupMenu = () => {
   return (
       <div className="h-full flex flex-wrap p-1 justify-around gap-4 basis-[85%] bg-white">
       <BlackBtn label="No" />
@@ -41,3 +42,4 @@ export const SyrupMenu = () => {
   );
 };
 
+export default SyrupMenu

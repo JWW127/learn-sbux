@@ -1,15 +1,13 @@
 import {
-  PurpleBtn,
   YellowBtn,
   OrangeBtn,
-  RoseBtn,
   SkyBtn,
   LightAmberBtn,
   OffBtnComponent,
   BlackBtn,
 } from "./MenuButtons";
 
-export const BlendedMenu = () => {
+ const BlendedMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
       {" "}
@@ -53,3 +51,5 @@ export const BlendedMenu = () => {
     </div>
   );
 };
+
+export default BlendedMenu

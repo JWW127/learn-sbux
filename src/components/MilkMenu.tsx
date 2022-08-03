@@ -6,7 +6,7 @@ import {
   YellowBtn,
 } from "./MenuButtons";
 
-export const MilkMenu = () => {
+ const MilkMenu = () => {
   return (
     <div className="h-full basis-[85%] flex flex-wrap pr-6 py-2 bg-white">
       <div className="flex flex-wrap justify-around gap-x-1 gap-y-4">
@@ -49,3 +49,5 @@ export const MilkMenu = () => {
     </div>
   );
 };
+
+export default MilkMenu

@@ -8,7 +8,8 @@ import {
   SkyBtn,
   LightAmberBtn,
 } from "./MenuButtons";
-export const BrewMenu = () => {
+
+ const BrewMenu = () => {
   return (
     <div className="h-full basis-[85%] bg-white flex flex-wrap">
       <div className="flex flex-wrap justify-around py-1 gap-x-1 gap-y-4">
@@ -51,3 +52,5 @@ export const BrewMenu = () => {
     </div>
   );
 };
+
+export default BrewMenu

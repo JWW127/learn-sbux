@@ -8,7 +8,8 @@ import {
   PurpleBtn,
   RoseBtn,
 } from "./MenuButtons";
-export const CustomMenu = () => {
+
+ const CustomMenu = () => {
   return (
     <div className="h-full basis-[85%] p-1 gap-y-1 bg-white flex flex-wrap justify-around">
       <BlackBtn label="No" />
@@ -62,3 +63,5 @@ export const CustomMenu = () => {
     </div>
   );
 };
+
+export default CustomMenu

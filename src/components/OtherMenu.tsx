@@ -8,7 +8,7 @@ import {
   PurpleBtn,
 } from "./MenuButtons";
 
-export const OtherMenu = () => {
+const OtherMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
       {" "}
@@ -66,3 +66,4 @@ export const OtherMenu = () => {
   );
 };
 
+export default OtherMenu

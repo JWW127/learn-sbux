@@ -1,16 +1,20 @@
+import dynamic from 'next/dynamic'
+import { Suspense } from 'react';
 import { useStore } from "../lib/store";
 import { PosBottomNav } from "./PosBottomNav";
 import { DrinkSizeMenu } from "./DrinkSizeMenu";
 import { PosSideNav } from "./PosSideNav";
-import { SyrupMenu } from "./SyrupMenu";
-import { MilkMenu } from "./MilkMenu";
-import { CustomMenu } from "./CustomMenu";
-import { BlendedMenu } from "./BlendedMenu";
-import { BrewMenu } from "./BrewMenu";
-import { EspMenu } from "./EspMenu";
-import { OtherMenu } from "./OtherMenu";
-import { TeaMenu } from "./TeaMenu";
-import { MuffinMenu } from "./MuffinMenu";
+
+//lazy load
+const DynamicSyrupMenu = dynamic(() => import('./SyrupMenu'), {suspense: true})
+const DynamicMilkMenu = dynamic(() => import('./MilkMenu'), {suspense: true})
+const DynamicCustomMenu = dynamic(() => import('./CustomMenu'), {suspense: true})
+const DynamicBlendedMenu = dynamic(() => import('./BlendedMenu'), {suspense: true})
+const DynamicBrewMenu = dynamic(() => import('./BrewMenu'), {suspense: true})
+const DynamicEspMenu = dynamic(() => import('./EspMenu'), {suspense: true})
+const DynamicOtherMenu = dynamic(() => import('./OtherMenu'), {suspense: true})
+const DynamicTeaMenu = dynamic(() => import('./TeaMenu'), {suspense: true})
+const DynamicMuffinMenu = dynamic(() => import('./MuffinMenu'), {suspense: true})
 
 export const MainMenu = () => {
   const menu = useStore((state) => state.menu);
@@ -21,31 +25,31 @@ export const MainMenu = () => {
       currentMenu = <DrinkSizeMenu />;
       break;
     case "syrupMenu":
-      currentMenu = <SyrupMenu />;
+      currentMenu = <DynamicSyrupMenu />;
       break;
     case "milkMenu":
-      currentMenu = <MilkMenu />;
+      currentMenu = <DynamicMilkMenu />;
       break;
     case "customMenu":
-      currentMenu = <CustomMenu />;
+      currentMenu = <DynamicCustomMenu />;
       break;
     case "blendedMenu":
-      currentMenu = <BlendedMenu />;
+      currentMenu = <DynamicBlendedMenu />;
       break;
     case "brewMenu":
-      currentMenu = <BrewMenu />;
+      currentMenu = <DynamicBrewMenu />;
       break;
     case "espMenu":
-      currentMenu = <EspMenu />;
+      currentMenu = <DynamicEspMenu />;
       break;
     case "otherMenu":
-      currentMenu = <OtherMenu />;
+      currentMenu = <DynamicOtherMenu />;
       break;
     case "teaMenu":
-      currentMenu = <TeaMenu />;
+      currentMenu = <DynamicTeaMenu />;
       break;
     case "muffinMenu":
-      currentMenu = <MuffinMenu />;
+      currentMenu = <DynamicMuffinMenu />;
     break;
     default:
       currentMenu = <DrinkSizeMenu />;
@@ -55,7 +59,9 @@ export const MainMenu = () => {
   return (
     <div className="flex flex-col h-full ">
       <div className="flex flex-row h-4/5">
+        <Suspense fallback={`loading...`}>
         {currentMenu}
+        </Suspense >
         <PosSideNav />
       </div>
       <PosBottomNav />

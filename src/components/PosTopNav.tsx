@@ -2,6 +2,7 @@ import { useStore } from "./../lib/store";
 export const PosTopNav = () => {
   const drinkCategory = useStore((state) => state.drinkCategory)
   const foodCategory = useStore((state) => state.foodCategory)
+  const miscCategory = useStore((state) => state.miscCategory)
   const category = useStore((state) => state.category)
 
   const darkTopBtns = "w-[10vw] h-[80%] shadow-inner shadow-lg shadow-stone-200  bg-stone-800 active:bg-stone-900 active:shadow-stone-900 rounded-xl text-white"
@@ -19,13 +20,13 @@ export const PosTopNav = () => {
       <button className={darkTopBtns}>
         Functions
       </button>
-      <button className={greenTopBtns}>
+      <button className={category === "MiscTab" ? greenTopBtnsActive : greenTopBtns} onClick={() => miscCategory()}>
         Misc
       </button>
-      <button className={greenTopBtns}>
+      <button className={category === "BeansTab" ? greenTopBtnsActive : greenTopBtns}>
         Beans
       </button>
-      <button className={greenTopBtns}>
+      <button className={category === "RTDTab" ? greenTopBtnsActive : greenTopBtns}>
         RTD&E
       </button>
       <button className={category === "FoodTab" ? greenTopBtnsActive : greenTopBtns} onClick={() => foodCategory()}>
