@@ -10,7 +10,7 @@ import { BrewMenu } from "./BrewMenu";
 import { EspMenu } from "./EspMenu";
 import { OtherMenu } from "./OtherMenu";
 import { TeaMenu } from "./TeaMenu";
-
+import { MuffinMenu } from "./MuffinMenu";
 
 export const MainMenu = () => {
   const menu = useStore((state) => state.menu);
@@ -44,6 +44,9 @@ export const MainMenu = () => {
     case "teaMenu":
       currentMenu = <TeaMenu />;
       break;
+    case "muffinMenu":
+      currentMenu = <MuffinMenu />;
+    break;
     default:
       currentMenu = <DrinkSizeMenu />;
       break;
