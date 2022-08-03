@@ -72,7 +72,7 @@ export const PosSideNav = () => {
 
   const FoodTab = () => {
     return (
-      <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4">
+      <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
         <button className={mu} onClick={() => getMuffinMenu()}>
          Muffins & Scones 
         </button>

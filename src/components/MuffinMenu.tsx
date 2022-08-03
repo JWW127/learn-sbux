@@ -2,6 +2,7 @@ import {
   SkyBtn,
   LightAmberBtn,
   OffBtnComponent,
+  BlackBtn,
 } from "./MenuButtons";
 export const MuffinMenu = () => {
   return (
@@ -27,7 +28,7 @@ export const MuffinMenu = () => {
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
-        <LightAmberBtn label="BB Scone"/>
+        <LightAmberBtn label="Vanilla Scone"/>
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
@@ -42,6 +43,11 @@ export const MuffinMenu = () => {
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <BlackBtn label="Seasonal"/>
       </div>
     </div>
   );

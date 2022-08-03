@@ -2,8 +2,11 @@ import { useStore } from "./../lib/store";
 export const PosTopNav = () => {
   const drinkCategory = useStore((state) => state.drinkCategory)
   const foodCategory = useStore((state) => state.foodCategory)
+  const category = useStore((state) => state.category)
+
   const darkTopBtns = "w-[10vw] h-[80%] shadow-inner shadow-lg shadow-stone-200  bg-stone-800 active:bg-stone-900 active:shadow-stone-900 rounded-xl text-white"
   const greenTopBtns = "w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-green-600 active:bg-stone-300 active:shadow-gray-900 rounded-[50%]"
+  const greenTopBtnsActive = "w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-stone-300 active:bg-stone-300 active:shadow-gray-900 rounded-[50%]"
 
   return (
     <div className="h-[10vh] basis-full bg-neutral-500 flex justify-around items-center text-lg">
@@ -25,10 +28,10 @@ export const PosTopNav = () => {
       <button className={greenTopBtns}>
         RTD&E
       </button>
-      <button className={greenTopBtns} onClick={() => foodCategory()}>
+      <button className={category === "FoodTab" ? greenTopBtnsActive : greenTopBtns} onClick={() => foodCategory()}>
         Food
       </button>
-      <button className={greenTopBtns} onClick={() => drinkCategory()}>
+      <button className={category === "DrinksTab" ? greenTopBtnsActive : greenTopBtns} onClick={() => drinkCategory()}>
         Drink
       </button>
     </div>
