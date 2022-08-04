@@ -6,15 +6,15 @@ import { DrinkSizeMenu } from "./DrinkSizeMenu";
 import { PosSideNav } from "./PosSideNav";
 
 //lazy load
-const DynamicSyrupMenu = dynamic(() => import('./SyrupMenu'), {suspense: true})
-const DynamicMilkMenu = dynamic(() => import('./MilkMenu'), {suspense: true})
-const DynamicCustomMenu = dynamic(() => import('./CustomMenu'), {suspense: true})
-const DynamicBlendedMenu = dynamic(() => import('./BlendedMenu'), {suspense: true})
-const DynamicBrewMenu = dynamic(() => import('./BrewMenu'), {suspense: true})
-const DynamicEspMenu = dynamic(() => import('./EspMenu'), {suspense: true})
-const DynamicOtherMenu = dynamic(() => import('./OtherMenu'), {suspense: true})
-const DynamicTeaMenu = dynamic(() => import('./TeaMenu'), {suspense: true})
-const DynamicMuffinMenu = dynamic(() => import('./MuffinMenu'), {suspense: true})
+const DynamicSyrupMenu = dynamic(() => import('./SyrupMenu'), {suspense: false})
+const DynamicMilkMenu = dynamic(() => import('./MilkMenu'), {suspense: false})
+const DynamicCustomMenu = dynamic(() => import('./CustomMenu'), {suspense: false})
+const DynamicBlendedMenu = dynamic(() => import('./BlendedMenu'), {suspense: false})
+const DynamicBrewMenu = dynamic(() => import('./BrewMenu'), {suspense: false})
+const DynamicEspMenu = dynamic(() => import('./EspMenu'), {suspense: false})
+const DynamicOtherMenu = dynamic(() => import('./OtherMenu'), {suspense: false})
+const DynamicTeaMenu = dynamic(() => import('./TeaMenu'), {suspense: false})
+const DynamicMuffinMenu = dynamic(() => import('./MuffinMenu'), {suspense: false})
 
 export const MainMenu = () => {
   const menu = useStore((state) => state.menu);

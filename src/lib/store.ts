@@ -29,6 +29,8 @@ type State = {
   drinkCategory: () => void;
   foodCategory: () => void;
   miscCategory: () => void;
+  beansCategory: () => void;
+  rtdCategory: () => void;
 };
 
 export const useStore = create<State>((set) => ({
@@ -38,6 +40,8 @@ export const useStore = create<State>((set) => ({
   drinkCategory: () => set({ category: "DrinksTab", menu: "drinkSizeMenu" }),
   foodCategory: () => set({ category: "FoodTab", menu: "muffinMenu" }),
   miscCategory: () => set({ category: "MiscTab", menu: "muffinMenu" }),
+  beansCategory: () => set({ category: "BeansTab", menu: "muffinMenu" }),
+  rtdCategory: () => set({ category: "RtdTab", menu: "muffinMenu" }),
   drinkSizeMenu: () => set({ menu: "drinkSizeMenu" }),
   syrupMenu: () => set({ menu: "syrupMenu" }),
   milkMenu: () => set({ menu: "milkMenu" }),
