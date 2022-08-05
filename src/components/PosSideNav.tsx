@@ -9,7 +9,7 @@ export const PosSideNav = () => {
   const getSyrupMenu = useStore((state) => state.syrupMenu);
   const getMilkMenu = useStore((state) => state.milkMenu);
   const getCustomMenu = useStore((state) => state.customMenu);
-
+  const getCakesMenu = useStore((state) => state.cakesMenu)
 
   let tab;
 
@@ -28,6 +28,7 @@ export const PosSideNav = () => {
   const mm = menu === "milkMenu" ? menuBtnActive : menuBtn; //milkmenu
   const cm = menu === "customMenu" ? menuBtnActive : menuBtn; //custommenu
   const mu = menu === "muffinMenu" ? menuBtnActive : menuBtn; //muffinmenu
+  const ca = menu === "cakesMenu" ? menuBtnActive : menuBtn; //muffinmenu
 
   const DrinksTab = () => {
     return (
@@ -76,7 +77,7 @@ export const PosSideNav = () => {
         <button className={mu} onClick={() => getMuffinMenu()}>
          Muffins & Scones 
         </button>
-        <button className={sm} onClick={() => getSyrupMenu()}>
+        <button className={ca} onClick={() => getCakesMenu()}>
           Loaves & Cakes
         </button>
         <button className={sm} onClick={() => getSyrupMenu()}>

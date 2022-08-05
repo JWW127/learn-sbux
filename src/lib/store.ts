@@ -24,6 +24,7 @@ type State = {
   espMenu: () => void;
   teaMenu: () => void;
   muffinMenu: () => void;
+  cakesMenu: () => void;
   icedDrink: () => void;
   hotDrink: () => void;
   drinkCategory: () => void;
@@ -52,6 +53,7 @@ export const useStore = create<State>((set) => ({
   otherMenu: () => set({ menu: "otherMenu" }),
   teaMenu: () => set({ menu: "teaMenu" }),
   muffinMenu: () => set({ menu: "muffinMenu" }),
+  cakesMenu: () => set({ menu: "cakesMenu" }),
   icedDrink: () => set({ currentDrink: { iced: "Iced" } }),
   hotDrink: () => set({ currentDrink: { iced: "Hot" } }),
 }));
