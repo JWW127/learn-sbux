@@ -4,30 +4,28 @@ import {
   BlackBtn,
   YellowBtn,
   PurpleBtn,
+  OrangeBtn,
 } from "./MenuButtons";
 
- const MuffinMenu = () => {
+ const BreadMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
           <div className="flex flex-wrap justify-around w-full py-2 text-sm gap-x-1 gap-y-4">
-        <YellowBtn label="Banana Nut"/>
+        <OrangeBtn label="Plain Bagel"/>
+        <OrangeBtn label="Plain Bagel"/>
+        <OrangeBtn label="Plain Bagel"/>
+        <OrangeBtn label="Plain Bagel"/>
+        <OrangeBtn label="Plain Bagel"/>
+        <OrangeBtn label="Plain Bagel"/>
+        <OrangeBtn label="Plain Bagel"/>
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <YellowBtn label="S.Potato CC"/>
-        <YellowBtn label="Lemon Loaf"/>
-        <YellowBtn label="Pumpkin Bread"/>
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
+        <OrangeBtn label="Plain Bagel"/>
         <SkyBtn label="Coffee Cake"/>
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <PurpleBtn label="Hawaii BB"/>
+        <SkyBtn label="Coffee Cake"/>
+        <SkyBtn label="Coffee Cake"/>
+        <SkyBtn label="Coffee Cake"/>
         <PurpleBtn label="Birthday Pop"/>
-        <PurpleBtn label="Choc Pop"/>
-        <PurpleBtn label="Cookie Pop"/>
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
@@ -38,11 +36,15 @@ import {
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
-        <BlackBtn label="Seasonal"/>
+        <OrangeBtn label="Plain Bagel"/>
+        <OrangeBtn label="Plain Bagel"/>
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
       </div>
     </div>
   );
 };
 
-export default MuffinMenu
+export default BreadMenu
 

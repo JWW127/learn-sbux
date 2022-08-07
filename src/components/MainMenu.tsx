@@ -16,6 +16,7 @@ const DynamicOtherMenu = dynamic(() => import('./OtherMenu'), {suspense: false})
 const DynamicTeaMenu = dynamic(() => import('./TeaMenu'), {suspense: false})
 const DynamicMuffinMenu = dynamic(() => import('./MuffinMenu'), {suspense: false})
 const DynamicCakesMenu = dynamic(() => import('./CakesMenu'), {suspense: false})
+const DynamicBreadMenu = dynamic(() => import('./BreadMenu'), {suspense: false})
 
 export const MainMenu = () => {
   const menu = useStore((state) => state.menu);
@@ -54,6 +55,9 @@ export const MainMenu = () => {
     break;
     case "cakesMenu":
     currentMenu = <DynamicCakesMenu />;
+      break;
+    case "breadMenu":
+    currentMenu = <DynamicBreadMenu />;
       break;
     default:
       currentMenu = <DrinkSizeMenu />;

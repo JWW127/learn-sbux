@@ -8,7 +8,7 @@ import {
  const MuffinMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
-          <div className="flex flex-wrap justify-around w-full py-1 text-sm gap-x-1 gap-y-4">
+          <div className="flex flex-wrap justify-around w-full py-2 text-sm gap-x-1 gap-y-4">
         <SkyBtn label="BB Muffin" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
