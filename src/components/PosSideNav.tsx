@@ -11,6 +11,8 @@ export const PosSideNav = () => {
   const getCustomMenu = useStore((state) => state.customMenu);
   const getCakesMenu = useStore((state) => state.cakesMenu)
   const getBreadMenu = useStore((state) => state.breadMenu)
+  const getDoughnutsMenu = useStore((state) => state.doughnutsMenu)
+
 
   let tab;
 
@@ -25,12 +27,13 @@ export const PosSideNav = () => {
       ? "flex flex-col items-center italic shadow-md rounded-tr-xl bg-stone-300 active:bg-stone-200 rounded-br-xl basis-2/5"
       : "flex flex-col items-center italic shadow-md rounded-tr-xl bg-stone-400 active:bg-stone-200 rounded-br-xl basis-2/5";
 
-  const sm = menu === "syrupMenu" ? menuBtnActive : menuBtn; //syrupmenu
-  const mm = menu === "milkMenu" ? menuBtnActive : menuBtn; //milkmenu
-  const cm = menu === "customMenu" ? menuBtnActive : menuBtn; //custommenu
-  const mu = menu === "muffinMenu" ? menuBtnActive : menuBtn; //muffinmenu
-  const ca = menu === "cakesMenu" ? menuBtnActive : menuBtn; //muffinmenu
-  const br = menu === "breadMenu" ? menuBtnActive : menuBtn; //breadmenu
+  const sm = menu === "syrupMenu" ? menuBtnActive : menuBtn; 
+  const mm = menu === "milkMenu" ? menuBtnActive : menuBtn; 
+  const cm = menu === "customMenu" ? menuBtnActive : menuBtn; 
+  const mu = menu === "muffinMenu" ? menuBtnActive : menuBtn; 
+  const ca = menu === "cakesMenu" ? menuBtnActive : menuBtn; 
+  const br = menu === "breadMenu" ? menuBtnActive : menuBtn; 
+  const dn = menu === "doughnutMenu" ? menuBtnActive : menuBtn; 
 
   const DrinksTab = () => {
     return (
@@ -97,7 +100,7 @@ export const PosSideNav = () => {
         <button className={br} onClick={() => getBreadMenu()}>
           Bagels & Bread
         </button>
-        <button className={sm} onClick={() => getSyrupMenu()}>
+        <button className={dn} onClick={() => getDoughnutsMenu()}>
           Doughnuts & SweetRolls
         </button>
         <button className={mm} onClick={() => getMilkMenu()}>
