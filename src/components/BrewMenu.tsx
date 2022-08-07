@@ -12,7 +12,7 @@ import {
  const BrewMenu = () => {
   return (
     <div className="h-full basis-[85%] bg-white flex flex-wrap">
-      <div className="flex flex-wrap justify-around py-1 gap-x-1 gap-y-4">
+      <div className="flex flex-wrap justify-around py-2 gap-x-1 gap-y-4">
         <BlackBtn label="Clover" />
         <BlackBtn label="Reserve" />
         <BlackBtn label="Draft" />

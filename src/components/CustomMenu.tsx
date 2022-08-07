@@ -11,7 +11,7 @@ import {
 
  const CustomMenu = () => {
   return (
-    <div className="h-full basis-[85%] p-1 gap-y-1 bg-white flex flex-wrap justify-around">
+    <div className="h-full basis-[85%] p-1 py-2 gap-y-1 bg-white flex flex-wrap justify-around">
       <BlackBtn label="No" />
       <BlackBtn label="No" />
       <OffBtnComponent label="" />

@@ -51,21 +51,33 @@ export const PosSideNav = () => {
             </li>
             <li className="flex flex-col italic basis-1/5">
               Sizes{" "}
-              <div className="h-6 text-center border-2 border-gray-600 rounded-sm w-18"></div>
+              <div className="h-6 text-center border-2 border-gray-600 rounded-sm w-18">{drink.size?.slice(0,2)}</div>
             </li>
           </ul>
         </button>
         <button className={sm} onClick={() => getSyrupMenu()}>
+          <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
+          <li className="flex flex-col italic text-center">
           Syrup
-          <div className="w-1/2 h-6 border-2 border-gray-600 rounded-sm"></div>
+          <div className="h-6 border-2 border-gray-600 rounded-sm w-18"></div>
+          </li>
+          </ul>
         </button>
         <button className={mm} onClick={() => getMilkMenu()}>
-          Milk
-          <div className="w-1/2 h-6 border-2 border-gray-600 rounded-sm"></div>
+          <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
+          <li className="flex flex-col italic text-center">
+              Milks
+          <div className="h-6 border-2 border-gray-600 rounded-sm w-18"></div>
+          </li>
+          </ul>
         </button>
         <button className={cm} onClick={() => getCustomMenu()}>
-          Custom
-          <div className="w-1/2 h-6 border-2 border-gray-600 rounded-sm"></div>
+          <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
+          <li className="flex flex-col italic text-center">
+              Custom
+          <div className="h-6 border-2 border-gray-600 rounded-sm w-18"></div>
+          </li>
+          </ul>
         </button>
       </div>
     );

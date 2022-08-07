@@ -2,7 +2,7 @@ import { BlackBtn, YellowBtn,BlueBtn, LimeBtn, LightAmberBtn, OffBtnComponent, P
 
 const SyrupMenu = () => {
   return (
-      <div className="h-full flex flex-wrap p-1 justify-around gap-4 basis-[85%] bg-white">
+      <div className="h-full flex flex-wrap p-1 py-2 justify-around gap-4 basis-[85%] bg-white">
       <BlackBtn label="No" />
       <BlackBtn label="Sub" />
       <YellowBtn label="Pumps"/>

@@ -12,7 +12,7 @@ const OtherMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
       {" "}
-      <div className="flex flex-wrap justify-around py-1 text-sm gap-y-2">
+      <div className="flex flex-wrap justify-around py-2 text-sm gap-y-2">
         <LightAmberBtn label="Hot Choc"/>
         <LightAmberBtn label="W.Hot Choc"/>
         <SkyBtn label="Cold Milk" />
@@ -49,12 +49,6 @@ const OtherMenu = () => {
         <PurpleBtn label="Star"/>
         <OffBtnComponent label="" />
         <SkyBtn label="Water" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
         <LightAmberBtn label="SC Hot Choc"/>
         <GreenBtn label="PMKN Creme"/>
         <OffBtnComponent label="" />
