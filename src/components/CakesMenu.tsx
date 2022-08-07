@@ -1,6 +1,5 @@
 import {
   SkyBtn,
-  LightAmberBtn,
   OffBtnComponent,
   BlackBtn,
   YellowBtn,

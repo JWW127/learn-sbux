@@ -10,12 +10,14 @@ import {
 import { useStore } from "../lib/store";
 
 export const DrinkSizeMenu = () => {
-      const icedDrink = useStore((state) => state.icedDrink);
+  const cd = useStore((state) => state.currentDrink);
+  const icedDrink = useStore((state) => state.icedDrink);
+  const sizeDrink = useStore((state) => state.sizeDrink);
 
   return (
     <div className="h-full basis-[85%] py-4 pr-4 bg-white flex flex-col">
       <div className="flex flex-wrap justify-around pt-5 pb-14 gap-y-6 gap-x-1 basis-2/5">
-        <TealBtn label="Iced" click={icedDrink}/>
+        <TealBtn label="Iced" click={() => icedDrink(cd, "Iced")} />
         <OffBtnComponent label="" />
         <YellowBtn label="Blonde" />
         <OrangeBtn label="Decaf" />
@@ -42,7 +44,7 @@ export const DrinkSizeMenu = () => {
         <GreenBtn label="Updosed" />
         <GreenBtn label="Long Shot" />
         <GreenBtn label="Ristretto" />
-        <YellowBtn label="Short" />
+        <YellowBtn label="Short" click={() => sizeDrink(cd, "Short")} />
         <YellowBtn label="Tall" />
         <YellowBtn label="Grande" />
         <YellowBtn label="Venti" />

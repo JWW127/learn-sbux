@@ -1,5 +1,3 @@
-import { useStore } from "../lib/store";
-
 interface BtnProps {
   label: string;
   design?: string;
@@ -33,7 +31,7 @@ export const RoseBtn = (props: BtnProps) => {
 
 export const YellowBtn = (props: BtnProps) => {
   return (
-    <button className="bg-yellow-200 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-yellow-400 basis-1/6">
+    <button className="bg-yellow-200 border-2 border-gray-900 rounded-lg shadow-lg shadow-inner shadow-stone-200 active:shadow-stone-900 active:bg-yellow-400 basis-1/6" onClick={props.click}>
       {props.label}
     </button>
   );
