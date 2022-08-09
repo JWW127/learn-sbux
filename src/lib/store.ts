@@ -27,6 +27,7 @@ type State = {
   cakesMenu: () => void;
   breadMenu: () => void;
   doughnutsMenu: () => void;
+  browniesMenu: () => void;
   icedDrink: (cd: Partial<CurrentDrink>, ice: string) => void;
   sizeDrink: (cd: Partial<CurrentDrink>, sizing: string) => void;
   hotDrink: () => void;
@@ -59,6 +60,7 @@ export const useStore = create<State>((set) => ({
   cakesMenu: () => set({ menu: "cakesMenu" }),
   breadMenu: () => set({ menu: "breadMenu" }),
   doughnutsMenu: () => set({ menu: "doughnutsMenu" }),
+  browniesMenu: () => set({ menu: "browniesMenu" }),
   icedDrink: (currentDrink, ice) =>
     set({ currentDrink: { ...currentDrink, iced: ice } }),
   sizeDrink: (currentDrink, sizing) =>

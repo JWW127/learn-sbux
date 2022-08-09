@@ -12,6 +12,7 @@ export const PosSideNav = () => {
   const getCakesMenu = useStore((state) => state.cakesMenu)
   const getBreadMenu = useStore((state) => state.breadMenu)
   const getDoughnutsMenu = useStore((state) => state.doughnutsMenu)
+  const getBrowniesMenu = useStore((state) => state.browniesMenu)
 
 
   let tab;
@@ -33,7 +34,8 @@ export const PosSideNav = () => {
   const mu = menu === "muffinMenu" ? menuBtnActive : menuBtn; 
   const ca = menu === "cakesMenu" ? menuBtnActive : menuBtn; 
   const br = menu === "breadMenu" ? menuBtnActive : menuBtn; 
-  const dn = menu === "doughnutMenu" ? menuBtnActive : menuBtn; 
+  const dn = menu === "doughnutsMenu" ? menuBtnActive : menuBtn; 
+  const bw = menu === "browniesMenu" ? menuBtnActive : menuBtn;
 
   const DrinksTab = () => {
     return (
@@ -103,7 +105,7 @@ export const PosSideNav = () => {
         <button className={dn} onClick={() => getDoughnutsMenu()}>
           Doughnuts & SweetRolls
         </button>
-        <button className={mm} onClick={() => getMilkMenu()}>
+        <button className={bw} onClick={() => getBrowniesMenu()}>
           Brownies, Cookies, & Bars
         </button>
         <button className={cm} onClick={() => getCustomMenu()}>
@@ -113,6 +115,7 @@ export const PosSideNav = () => {
     );
   };
 
+  // top nav that that controls sidenav tabs rendered
   switch (category) {
     case "DrinksTab":
       tab = <DrinksTab />;
