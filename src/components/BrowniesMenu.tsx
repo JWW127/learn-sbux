@@ -43,7 +43,12 @@ import {
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
-        <BlackBtn label="More"/>
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <OffBtnComponent label="" />
+        <BlackBtn label="Seasonal"/>
       </div>
     </div>
   );

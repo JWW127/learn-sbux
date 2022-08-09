@@ -13,6 +13,7 @@ export const PosSideNav = () => {
   const getBreadMenu = useStore((state) => state.breadMenu)
   const getDoughnutsMenu = useStore((state) => state.doughnutsMenu)
   const getBrowniesMenu = useStore((state) => state.browniesMenu)
+  const getSandwichMenu = useStore((state) => state.sandwichMenu)
 
 
   let tab;
@@ -36,6 +37,7 @@ export const PosSideNav = () => {
   const br = menu === "breadMenu" ? menuBtnActive : menuBtn; 
   const dn = menu === "doughnutsMenu" ? menuBtnActive : menuBtn; 
   const bw = menu === "browniesMenu" ? menuBtnActive : menuBtn;
+  const sd = menu === "sandwichMenu" ? menuBtnActive : menuBtn;
 
   const DrinksTab = () => {
     return (
@@ -108,8 +110,8 @@ export const PosSideNav = () => {
         <button className={bw} onClick={() => getBrowniesMenu()}>
           Brownies, Cookies, & Bars
         </button>
-        <button className={cm} onClick={() => getCustomMenu()}>
-          Sandwhiches
+        <button className={sd} onClick={() => getSandwichMenu()}>
+          Breakfast Sandwiches
         </button>
       </div>
     );

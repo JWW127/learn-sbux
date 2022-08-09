@@ -1,6 +1,15 @@
-import { PurpleBtn, YellowBtn, OrangeBtn, RoseBtn, SkyBtn, LightAmberBtn, OffBtnComponent, BlackBtn } from "./MenuButtons";
+import {
+  PurpleBtn,
+  YellowBtn,
+  OrangeBtn,
+  RoseBtn,
+  SkyBtn,
+  LightAmberBtn,
+  OffBtnComponent,
+  BlackBtn,
+} from "./MenuButtons";
 
- const EspMenu = () => {
+const EspMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
       {" "}
@@ -30,13 +39,13 @@ import { PurpleBtn, YellowBtn, OrangeBtn, RoseBtn, SkyBtn, LightAmberBtn, OffBtn
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
-        <OrangeBtn label="Mocha"/>
-        <OrangeBtn label="WC Mocha"/>
+        <OrangeBtn label="Mocha" />
+        <OrangeBtn label="WC Mocha" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <YellowBtn label="PMKN Spice" />
-        <OrangeBtn label="Slt Car Mocha"/>
+        <OrangeBtn label="Slt Car Mocha" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <BlackBtn label="More" />
@@ -45,4 +54,4 @@ import { PurpleBtn, YellowBtn, OrangeBtn, RoseBtn, SkyBtn, LightAmberBtn, OffBtn
   );
 };
 
-export default EspMenu
+export default EspMenu;
