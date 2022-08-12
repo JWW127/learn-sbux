@@ -18,19 +18,19 @@ export const PosBottomNav = () => {
     <div className="flex flex-wrap pb-2 h-1/5 bg-neutral-500">
       <div className="flex justify-center h-14 basis-full">
         <div className="flex justify-center gap-2 basis-5/6">
-          <button className={menu === "brewMenu" ? bottomTabsActive: bottomTabs} onClick={() => getBrewMenu()}>
+          <button type="button" className={menu === "brewMenu" ? bottomTabsActive: bottomTabs} onClick={() => getBrewMenu()}>
             Brewed
           </button>
-          <button className={menu === "espMenu" ? bottomTabsActive: bottomTabs} onClick={() => getEspMenu()}>
+          <button type="button" className={menu === "espMenu" ? bottomTabsActive: bottomTabs} onClick={() => getEspMenu()}>
             Espresso
           </button>
-          <button className={menu === "blendedMenu" ? bottomTabsActive: bottomTabs} onClick={() => getBlendedMenu()}>
+          <button type="button" className={menu === "blendedMenu" ? bottomTabsActive: bottomTabs} onClick={() => getBlendedMenu()}>
             Blended
           </button>
-          <button className={menu === "teaMenu" ? bottomTabsActive: bottomTabs} onClick={() => getTeaMenu()}>
+          <button type="button" className={menu === "teaMenu" ? bottomTabsActive: bottomTabs} onClick={() => getTeaMenu()}>
             Tea
           </button>
-          <button className={menu === "otherMenu" ? bottomTabsActive: bottomTabs} onClick={() => getOtherMenu()}>
+          <button type="button" className={menu === "otherMenu" ? bottomTabsActive: bottomTabs} onClick={() => getOtherMenu()}>
             Other
           </button>
         </div>
@@ -40,12 +40,12 @@ export const PosBottomNav = () => {
         </div>
       </div>
       <div className="flex justify-around pt-1 h-1/2 basis-full">
-        <button className={btnDark}>Item Availability</button>
-        <button className={btnDark}>SKU Entry</button>
-        <button className={btnDark}>Copy Drink</button>
-        <button className={btnDark}>Add Shot</button>
-        <button className={btnDark}>Ask Me</button>
-        <button className={btnDark}>Next Drink</button>
+        <button type="button" className={btnDark}>Item Availability</button>
+        <button type="button" className={btnDark}>SKU Entry</button>
+        <button type="button" className={btnDark}>Copy Drink</button>
+        <button type="button" className={btnDark}>Add Shot</button>
+        <button type="button" className={btnDark}>Ask Me</button>
+        <button type="button" className={btnDark}>Next Drink</button>
       </div>
     </div>
   );

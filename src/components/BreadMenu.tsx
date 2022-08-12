@@ -1,8 +1,6 @@
 import {
   SkyBtn,
   OffBtnComponent,
-  BlackBtn,
-  YellowBtn,
   PurpleBtn,
   OrangeBtn,
 } from "./MenuButtons";

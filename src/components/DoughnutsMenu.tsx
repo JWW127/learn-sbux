@@ -1,7 +1,5 @@
 import {
-  SkyBtn,
   OffBtnComponent,
-  BlackBtn,
   YellowBtn,
   PurpleBtn,
   OrangeBtn,
