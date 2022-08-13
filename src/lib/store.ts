@@ -34,6 +34,10 @@ type State = {
   newspaperMenu: () => void;
   donationsMenu: () => void;
   testMenu: () => void;
+  coreCoffeeMenu: () => void;
+  decafMenu: () => void;
+  reserveMenu: () => void;
+  pregroundMenu: () => void;
   icedDrink: (cd: Partial<CurrentDrink>, ice: string) => void;
   sizeDrink: (cd: Partial<CurrentDrink>, sizing: string) => void;
   hotDrink: () => void;
@@ -51,7 +55,7 @@ export const useStore = create<State>((set) => ({
   drinkCategory: () => set({ category: "DrinksTab", menu: "drinkSizeMenu" }),
   foodCategory: () => set({ category: "FoodTab", menu: "muffinMenu" }),
   miscCategory: () => set({ category: "MiscTab", menu: "loyaltyMenu" }),
-  beansCategory: () => set({ category: "BeansTab", menu: "muffinMenu" }),
+  beansCategory: () => set({ category: "BeansTab", menu: "coreCoffeeMenu" }),
   rtdCategory: () => set({ category: "RtdTab", menu: "muffinMenu" }),
   //DrinkTab Menus
   drinkSizeMenu: () => set({ menu: "drinkSizeMenu" }),
@@ -76,6 +80,11 @@ export const useStore = create<State>((set) => ({
   newspaperMenu: () => set({ menu: "newspaperMenu" }),
   donationsMenu: () => set({ menu: "donationsMenu" }),
   testMenu: () => set({ menu: "testMenu" }),
+  //BeansTab Menus
+  coreCoffeeMenu: () => set({ menu: "coreCoffeeMenu" }),
+  decafMenu: () => set({ menu: "decafMenu" }),
+  reserveMenu: () => set({ menu: "reserveMenu" }),
+  pregroundMenu: () => set({ menu: "pregroundMenu" }),
   //Button actions
   icedDrink: (currentDrink, ice) =>
     set({ currentDrink: { ...currentDrink, iced: ice } }),
