@@ -14,6 +14,7 @@ export const PosSideNav = () => {
   const getDoughnutsMenu = useStore((state) => state.doughnutsMenu);
   const getBrowniesMenu = useStore((state) => state.browniesMenu);
   const getSandwichMenu = useStore((state) => state.sandwichMenu);
+  const getLoyaltyMenu = useStore((state) => state.loyaltyMenu);
 
   let tab;
 
@@ -37,6 +38,7 @@ export const PosSideNav = () => {
   const dn = menu === "doughnutsMenu" ? menuBtnActive : menuBtn;
   const bw = menu === "browniesMenu" ? menuBtnActive : menuBtn;
   const sd = menu === "sandwichMenu" ? menuBtnActive : menuBtn;
+  const ly = menu === "loyaltyMenu" ? menuBtnActive : menuBtn;
 
   const DrinksTab = () => {
     return (
@@ -118,6 +120,31 @@ export const PosSideNav = () => {
     );
   };
 
+  const MiscTab = () => {
+    return (
+      <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
+        <button type="button" className={ly} onClick={() => getLoyaltyMenu()}>
+         Loyalty Card
+        </button>
+        <button type="button" className={ca} onClick={() => getCakesMenu()}>
+          Bulk
+        </button>
+        <button type="button" className={br} onClick={() => getBreadMenu()}>
+          Newspapers
+        </button>
+        <button type="button" className={dn} onClick={() => getDoughnutsMenu()}>
+          Donations
+        </button>
+        <button type="button" className={bw} onClick={() => getBrowniesMenu()}>
+          Non-Drink Test
+        </button>
+        <button type="button" className={sd} onClick={() => getSandwichMenu()}>
+          Test Items
+        </button>
+      </div>
+    );
+  };
+
   // top nav that that controls sidenav tabs rendered
   switch (category) {
     case "DrinksTab":
@@ -125,6 +152,9 @@ export const PosSideNav = () => {
       break;
     case "FoodTab":
       tab = <FoodTab />;
+      break;
+    case "MiscTab":
+      tab = <MiscTab />;
       break;
     default:
       tab = <DrinksTab />;

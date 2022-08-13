@@ -29,6 +29,11 @@ type State = {
   doughnutsMenu: () => void;
   browniesMenu: () => void;
   sandwichMenu: () => void;
+  loyaltyMenu: () => void;
+  bulkMenu: () => void;
+  newspaperMenu: () => void;
+  donationsMenu: () => void;
+  testMenu: () => void;
   icedDrink: (cd: Partial<CurrentDrink>, ice: string) => void;
   sizeDrink: (cd: Partial<CurrentDrink>, sizing: string) => void;
   hotDrink: () => void;
@@ -45,9 +50,10 @@ export const useStore = create<State>((set) => ({
   currentDrink: {},
   drinkCategory: () => set({ category: "DrinksTab", menu: "drinkSizeMenu" }),
   foodCategory: () => set({ category: "FoodTab", menu: "muffinMenu" }),
-  miscCategory: () => set({ category: "MiscTab", menu: "muffinMenu" }),
+  miscCategory: () => set({ category: "MiscTab", menu: "loyaltyMenu" }),
   beansCategory: () => set({ category: "BeansTab", menu: "muffinMenu" }),
   rtdCategory: () => set({ category: "RtdTab", menu: "muffinMenu" }),
+  //DrinkTab Menus
   drinkSizeMenu: () => set({ menu: "drinkSizeMenu" }),
   syrupMenu: () => set({ menu: "syrupMenu" }),
   milkMenu: () => set({ menu: "milkMenu" }),
@@ -57,12 +63,20 @@ export const useStore = create<State>((set) => ({
   espMenu: () => set({ menu: "espMenu" }),
   otherMenu: () => set({ menu: "otherMenu" }),
   teaMenu: () => set({ menu: "teaMenu" }),
+  //FoodTab Menus
   muffinMenu: () => set({ menu: "muffinMenu" }),
   cakesMenu: () => set({ menu: "cakesMenu" }),
   breadMenu: () => set({ menu: "breadMenu" }),
   doughnutsMenu: () => set({ menu: "doughnutsMenu" }),
   browniesMenu: () => set({ menu: "browniesMenu" }),
   sandwichMenu: () => set({ menu: "sandwichMenu" }),
+  //MiscTab Menus
+  loyaltyMenu: () => set({ menu: "loyaltyMenu" }),
+  bulkMenu: () => set({ menu: "bulkMenu" }),
+  newspaperMenu: () => set({ menu: "newspaperMenu" }),
+  donationsMenu: () => set({ menu: "donationsMenu" }),
+  testMenu: () => set({ menu: "testMenu" }),
+  //Button actions
   icedDrink: (currentDrink, ice) =>
     set({ currentDrink: { ...currentDrink, iced: ice } }),
   sizeDrink: (currentDrink, sizing) =>
