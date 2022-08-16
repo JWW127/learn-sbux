@@ -1,5 +1,6 @@
 import { useStore } from "./../lib/store";
-export const PosTopNav = () => {
+
+const PosTopNav = () => {
   const drinkCategory = useStore((state) => state.drinkCategory);
   const foodCategory = useStore((state) => state.foodCategory);
   const miscCategory = useStore((state) => state.miscCategory);
@@ -63,3 +64,5 @@ export const PosTopNav = () => {
     </div>
   );
 };
+
+export default PosTopNav

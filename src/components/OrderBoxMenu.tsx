@@ -1,6 +1,6 @@
 import { RiLock2Fill } from "react-icons/ri";
 
-export const OrderBoxMenu = () => {
+const OrderBoxMenu = () => {
   return (
     <div className="flex flex-wrap font-semibold bg-neutral-600 h-2/5">
       <div className="flex flex-wrap h-full pt-2 basis-full">
@@ -49,3 +49,5 @@ export const OrderBoxMenu = () => {
     </div>
   );
 };
+
+export default OrderBoxMenu

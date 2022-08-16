@@ -1,8 +1,20 @@
 import Head from "next/head";
-import { PosTopNav } from "../components/PosTopNav";
-import { OrderBox } from "../components/OrderBox";
-import { OrderBoxMenu } from "../components/OrderBoxMenu";
-import { MainMenu } from "../components/MainMenu";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const DynamicTopNav = dynamic(() => import("./../components/PosTopNav"), {
+  suspense: true,
+});
+const DynamicMainMenu = dynamic(() => import("./../components/MainMenu"), {
+  suspense: true,
+});
+const DynamicOrderBox = dynamic(() => import("./../components/OrderBox"), {
+  suspense: true,
+});
+const DynamicOrderBoxMenu = dynamic(
+  () => import("./../components/OrderBoxMenu"),
+  { suspense: true }
+);
 
 const Pos = () => {
   return (
@@ -14,13 +26,19 @@ const Pos = () => {
 
       <main>
         <div className="flex flex-wrap content-start w-full">
-          <PosTopNav />
+          <Suspense fallback={`Loading ...`}>
+            <DynamicTopNav />
+          </Suspense>
           <div className="h-[86vh] px-3 bg-neutral-600 lg:border-x-6 border-stone-500 basis-1/3 flex-col">
-            <OrderBox />
-            <OrderBoxMenu />
+            <Suspense fallback={`Loading ...`}>
+              <DynamicOrderBox />
+              <DynamicOrderBoxMenu />
+            </Suspense>
           </div>
           <div className="px-2 bg-neutral-500 basis-2/3">
-            <MainMenu />
+            <Suspense fallback={`Loading ...`}>
+              <DynamicMainMenu />
+            </Suspense>
           </div>
         </div>
       </main>

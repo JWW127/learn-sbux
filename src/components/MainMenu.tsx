@@ -27,7 +27,7 @@ const DynamicBulkMenu = dynamic(() => import('./BulkMenu'), {suspense: false})
 const DynamicCoreCoffeeMenu = dynamic(() => import('./CoreCoffeeMenu'), {suspense: false})
 const DynamicRtdMenu = dynamic(() => import('./RtdMenu'), {suspense: false})
 
-export const MainMenu = () => {
+const MainMenu = () => {
   const menu = useStore((state) => state.menu);
   let currentMenu;
 
@@ -112,3 +112,5 @@ export const MainMenu = () => {
     </div>
   );
 };
+
+export default MainMenu
