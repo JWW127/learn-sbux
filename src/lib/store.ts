@@ -31,6 +31,7 @@ type State = {
   sandwichMenu: () => void;
   loyaltyMenu: () => void;
   bulkMenu: () => void;
+  rtdMenu: () => void;
   newspaperMenu: () => void;
   donationsMenu: () => void;
   testMenu: () => void;
@@ -56,24 +57,24 @@ export const useStore = create<State>((set) => ({
   foodCategory: () => set({ category: "FoodTab", menu: "muffinMenu" }),
   miscCategory: () => set({ category: "MiscTab", menu: "loyaltyMenu" }),
   beansCategory: () => set({ category: "BeansTab", menu: "coreCoffeeMenu" }),
-  rtdCategory: () => set({ category: "RtdTab", menu: "muffinMenu" }),
+  rtdCategory: () => set({ category: "RtdTab", menu: "rtdMenu" }),
   //DrinkTab Menus
-  drinkSizeMenu: () => set({ menu: "drinkSizeMenu" }),
-  syrupMenu: () => set({ menu: "syrupMenu" }),
-  milkMenu: () => set({ menu: "milkMenu" }),
-  customMenu: () => set({ menu: "customMenu" }),
-  blendedMenu: () => set({ menu: "blendedMenu" }),
-  brewMenu: () => set({ menu: "brewMenu" }),
-  espMenu: () => set({ menu: "espMenu" }),
-  otherMenu: () => set({ menu: "otherMenu" }),
-  teaMenu: () => set({ menu: "teaMenu" }),
+  drinkSizeMenu: () => set({ category: "DrinksTab", menu: "drinkSizeMenu" }),
+  syrupMenu: () => set({ category: "DrinksTab", menu: "syrupMenu" }),
+  milkMenu: () => set({ category: "DrinksTab", menu: "milkMenu" }),
+  customMenu: () => set({ category: "DrinksTab", menu: "customMenu" }),
+  blendedMenu: () => set({ category: "DrinksTab", menu: "blendedMenu" }),
+  brewMenu: () => set({ category: "DrinksTab", menu: "brewMenu" }),
+  espMenu: () => set({ category: "DrinksTab", menu: "espMenu" }),
+  otherMenu: () => set({ category: "DrinksTab", menu: "otherMenu" }),
+  teaMenu: () => set({ category: "DrinksTab", menu: "teaMenu" }),
   //FoodTab Menus
-  muffinMenu: () => set({ menu: "muffinMenu" }),
-  cakesMenu: () => set({ menu: "cakesMenu" }),
-  breadMenu: () => set({ menu: "breadMenu" }),
-  doughnutsMenu: () => set({ menu: "doughnutsMenu" }),
-  browniesMenu: () => set({ menu: "browniesMenu" }),
-  sandwichMenu: () => set({ menu: "sandwichMenu" }),
+  muffinMenu: () => set({ category: "FoodTab", menu: "muffinMenu" }),
+  cakesMenu: () => set({ category: "FoodTab", menu: "cakesMenu" }),
+  breadMenu: () => set({ category: "FoodTab", menu: "breadMenu" }),
+  doughnutsMenu: () => set({ category: "FoodTab", menu: "doughnutsMenu" }),
+  browniesMenu: () => set({ category: "FoodTab", menu: "browniesMenu" }),
+  sandwichMenu: () => set({ category: "FoodTab", menu: "sandwichMenu" }),
   //MiscTab Menus
   loyaltyMenu: () => set({ menu: "loyaltyMenu" }),
   bulkMenu: () => set({ menu: "bulkMenu" }),
@@ -91,4 +92,6 @@ export const useStore = create<State>((set) => ({
   sizeDrink: (currentDrink, sizing) =>
     set({ currentDrink: { ...currentDrink, size: sizing } }),
   hotDrink: () => set({ currentDrink: { iced: "Hot" } }),
+  //RtdTabe Menus
+  rtdMenu: () => set({ category: "RtdTab", menu: "rtdMenu" }),
 }));

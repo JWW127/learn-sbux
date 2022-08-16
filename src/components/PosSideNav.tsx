@@ -15,7 +15,12 @@ export const PosSideNav = () => {
   const getBrowniesMenu = useStore((state) => state.browniesMenu);
   const getSandwichMenu = useStore((state) => state.sandwichMenu);
   const getLoyaltyMenu = useStore((state) => state.loyaltyMenu);
+  const getBulkMenu = useStore((state) => state.bulkMenu)
+  const getNewsMenu = useStore((state) => state.newspaperMenu)
+  const getDonationsMenu = useStore((state) => state.donationsMenu)
+  const getTestMenu = useStore((state) => state.teaMenu)
   const getCoreCoffeeMenu = useStore((state) => state.coreCoffeeMenu)
+  const getRtdMenu = useStore((state) => state.rtdMenu)
 
   let tab;
 
@@ -122,6 +127,16 @@ export const PosSideNav = () => {
     );
   };
 
+  const RtdTab = () => {
+    return (
+      <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
+        <button type="button" className={menu === "rtdMenu" ? menuBtnActive : menuBtn} onClick={() => getRtdMenu()}>
+          Case Items
+        </button>
+      </div>
+    );
+  };
+
   const BeansTab = () => {
     return (
       <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
@@ -147,19 +162,19 @@ export const PosSideNav = () => {
         <button type="button" className={ly} onClick={() => getLoyaltyMenu()}>
          Loyalty Card
         </button>
-        <button type="button" className={ca} onClick={() => getCakesMenu()}>
+        <button type="button" className={ca} onClick={() => getBulkMenu()}>
           Bulk
         </button>
-        <button type="button" className={br} onClick={() => getBreadMenu()}>
+        <button type="button" className={br} onClick={() => getNewsMenu()}>
           Newspapers
         </button>
-        <button type="button" className={dn} onClick={() => getDoughnutsMenu()}>
+        <button type="button" className={dn} onClick={() => getDonationsMenu()}>
           Donations
         </button>
-        <button type="button" className={bw} onClick={() => getBrowniesMenu()}>
+        <button type="button" className={bw} onClick={() => getTestMenu()}>
           Non-Drink Test
         </button>
-        <button type="button" className={sd} onClick={() => getSandwichMenu()}>
+        <button type="button" className={sd} onClick={() => getTestMenu()}>
           Test Items
         </button>
       </div>
@@ -173,6 +188,9 @@ export const PosSideNav = () => {
       break;
     case "FoodTab":
       tab = <FoodTab />;
+      break;
+    case "RtdTab":
+      tab = <RtdTab />;
       break;
     case "BeansTab":
       tab = <BeansTab />;
