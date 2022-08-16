@@ -21,11 +21,13 @@ const DynamicDoughnutsMenu = dynamic(() => import('./DoughnutsMenu'), {suspense:
 const DynamicBrowniesMenu = dynamic(() => import('./BrowniesMenu'), {suspense: false})
 const DynamicSandwichMenu = dynamic(() => import('./SandwichMenu'), {suspense: false})
 const DynamicLoyaltyMenu = dynamic(() => import('./LoyaltyMenu'), {suspense: false})
+const DynamicBulkMenu = dynamic(() => import('./BulkMenu'), {suspense: false})
 const DynamicNewspaperMenu = dynamic(() => import('./NewspaperMenu'), {suspense: false})
 const DynamicDonationsMenu = dynamic(()=> import('./DonationsMenu'), {suspense: false})
-const DynamicBulkMenu = dynamic(() => import('./BulkMenu'), {suspense: false})
+const DynamicTestMenu = dynamic(() =>  import('./TestMenu'), {suspense: false})
 const DynamicCoreCoffeeMenu = dynamic(() => import('./CoreCoffeeMenu'), {suspense: false})
 const DynamicRtdMenu = dynamic(() => import('./RtdMenu'), {suspense: false})
+
 
 const MainMenu = () => {
   const menu = useStore((state) => state.menu);
@@ -88,6 +90,12 @@ const MainMenu = () => {
       break;
     case "bulkMenu":
     currentMenu = <DynamicBulkMenu />;
+      break;
+    case "testMenu":
+    currentMenu = <DynamicTestMenu />;
+      break;
+    case "testMenu2":
+    currentMenu = <DynamicTestMenu />;
       break;
     case "coreCoffeeMenu":
     currentMenu = <DynamicCoreCoffeeMenu />;
