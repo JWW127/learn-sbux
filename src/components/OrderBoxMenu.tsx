@@ -14,10 +14,10 @@ export const OrderBoxMenu = () => {
             <li>Tax:{false ? `subtotal` : `\u00A0  $0.00`}</li>
           </ul>
         </div>
-        <div className="self-center pr-2 text-2xl text-right text-white basis-3/4">
+        <div className="self-center pr-4 text-3xl text-right text-white basis-3/4">
           <p>Total Due:</p>
         </div>
-        <button className="basis-1/4 w-[6vw] bg-gradient-to-b from-neutral-500 to-neutral-800 rounded-md text-white drop-shadow-xl active:from-neutral-600 active:to-neutral-800 border-2 border-neutral-900">
+        <button className="basis-1/4 w-[6vw] h-[25%] mb-1 bg-gradient-to-b from-neutral-500 to-neutral-800 rounded-md text-white drop-shadow-xl active:from-neutral-600 active:to-neutral-800 border-2 border-neutral-900">
           {false ? `total` : `$0.00`}
         </button>
         <div className="flex flex-wrap justify-between pt-2 gap-6 basis-full h-1/2">
