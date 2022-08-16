@@ -34,11 +34,7 @@ import {
         <YellowBtn label="Moz Pesto"/>
         <YellowBtn label="Chorizo Wrap"/>
         <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
+        <div className="basis-full"></div>
       </div>
     </div>
   );

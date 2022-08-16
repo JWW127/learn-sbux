@@ -35,6 +35,7 @@ type State = {
   newspaperMenu: () => void;
   donationsMenu: () => void;
   testMenu: () => void;
+  testMenu2: () => void;
   coreCoffeeMenu: () => void;
   decafMenu: () => void;
   reserveMenu: () => void;
@@ -81,6 +82,7 @@ export const useStore = create<State>((set) => ({
   newspaperMenu: () => set({ menu: "newspaperMenu" }),
   donationsMenu: () => set({ menu: "donationsMenu" }),
   testMenu: () => set({ menu: "testMenu" }),
+  testMenu2: () => set({ menu: "testMenu2" }),
   //BeansTab Menus
   coreCoffeeMenu: () => set({ menu: "coreCoffeeMenu" }),
   decafMenu: () => set({ menu: "decafMenu" }),

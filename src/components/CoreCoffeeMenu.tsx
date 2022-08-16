@@ -26,17 +26,7 @@ const CoreCoffeeMenu = () => {
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
+        <div className="basis-full"></div>
         <OffBtnComponent label="" />
         <BlackBtn label="Seasonal" />
       </div>

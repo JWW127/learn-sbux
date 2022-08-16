@@ -21,6 +21,8 @@ const DynamicDoughnutsMenu = dynamic(() => import('./DoughnutsMenu'), {suspense:
 const DynamicBrowniesMenu = dynamic(() => import('./BrowniesMenu'), {suspense: false})
 const DynamicSandwichMenu = dynamic(() => import('./SandwichMenu'), {suspense: false})
 const DynamicLoyaltyMenu = dynamic(() => import('./LoyaltyMenu'), {suspense: false})
+const DynamicNewspaperMenu = dynamic(() => import('./NewspaperMenu'), {suspense: false})
+const DynamicDonationsMenu = dynamic(()=> import('./DonationsMenu'), {suspense: false})
 const DynamicBulkMenu = dynamic(() => import('./BulkMenu'), {suspense: false})
 const DynamicCoreCoffeeMenu = dynamic(() => import('./CoreCoffeeMenu'), {suspense: false})
 const DynamicRtdMenu = dynamic(() => import('./RtdMenu'), {suspense: false})
@@ -77,6 +79,12 @@ export const MainMenu = () => {
       break;
     case "loyaltyMenu":
     currentMenu = <DynamicLoyaltyMenu />;
+      break;
+    case "newspaperMenu":
+    currentMenu = <DynamicNewspaperMenu />;
+      break;
+    case "donationsMenu":
+    currentMenu = <DynamicDonationsMenu />;
       break;
     case "bulkMenu":
     currentMenu = <DynamicBulkMenu />;

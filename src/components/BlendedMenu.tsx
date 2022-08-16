@@ -37,11 +37,7 @@ import {
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
+        <div className="basis-full"></div>
         <LightAmberBtn label="PMKN" />
         <SkyBtn label="PMKN Creme" />
         <LightAmberBtn label="SLT CRML" />

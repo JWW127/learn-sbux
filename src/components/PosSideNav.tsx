@@ -18,7 +18,8 @@ export const PosSideNav = () => {
   const getBulkMenu = useStore((state) => state.bulkMenu)
   const getNewsMenu = useStore((state) => state.newspaperMenu)
   const getDonationsMenu = useStore((state) => state.donationsMenu)
-  const getTestMenu = useStore((state) => state.teaMenu)
+  const getTestMenu = useStore((state) => state.testMenu)
+  const getTestMenu2 = useStore((state) => state.testMenu2)
   const getCoreCoffeeMenu = useStore((state) => state.coreCoffeeMenu)
   const getRtdMenu = useStore((state) => state.rtdMenu)
 
@@ -35,17 +36,6 @@ export const PosSideNav = () => {
       ? "flex flex-col items-center italic shadow-md rounded-tr-xl bg-stone-300 active:bg-stone-200 rounded-br-xl basis-2/5"
       : "flex flex-col items-center italic shadow-md rounded-tr-xl bg-stone-400 active:bg-stone-200 rounded-br-xl basis-2/5";
 
-  const sm = menu === "syrupMenu" ? menuBtnActive : menuBtn;
-  const mm = menu === "milkMenu" ? menuBtnActive : menuBtn;
-  const cm = menu === "customMenu" ? menuBtnActive : menuBtn;
-  const mu = menu === "muffinMenu" ? menuBtnActive : menuBtn;
-  const ca = menu === "cakesMenu" ? menuBtnActive : menuBtn;
-  const br = menu === "breadMenu" ? menuBtnActive : menuBtn;
-  const dn = menu === "doughnutsMenu" ? menuBtnActive : menuBtn;
-  const bw = menu === "browniesMenu" ? menuBtnActive : menuBtn;
-  const sd = menu === "sandwichMenu" ? menuBtnActive : menuBtn;
-  const ly = menu === "loyaltyMenu" ? menuBtnActive : menuBtn;
-  const cc = menu === "coreCoffeeMenu" ? menuBtnActive : menuBtn;
 
   const DrinksTab = () => {
     return (
@@ -74,7 +64,7 @@ export const PosSideNav = () => {
             </li>
           </ul>
         </button>
-        <button type="button" className={sm} onClick={() => getSyrupMenu()}>
+        <button type="button" className={menu === "syrupMenu" ? menuBtnActive : menuBtn} onClick={() => getSyrupMenu()}>
           <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
             <li className="flex flex-col italic text-center">
               Syrup
@@ -82,7 +72,7 @@ export const PosSideNav = () => {
             </li>
           </ul>
         </button>
-        <button type="button" className={mm} onClick={() => getMilkMenu()}>
+        <button type="button" className={menu === "milkMenu" ? menuBtnActive : menuBtn} onClick={() => getMilkMenu()}>
           <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
             <li className="flex flex-col italic text-center">
               Milks
@@ -90,7 +80,7 @@ export const PosSideNav = () => {
             </li>
           </ul>
         </button>
-        <button type="button" className={cm} onClick={() => getCustomMenu()}>
+        <button type="button" className={menu === "customMenu" ? menuBtnActive : menuBtn} onClick={() => getCustomMenu()}>
           <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
             <li className="flex flex-col italic text-center">
               Custom
@@ -105,22 +95,22 @@ export const PosSideNav = () => {
   const FoodTab = () => {
     return (
       <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
-        <button type="button" className={mu} onClick={() => getMuffinMenu()}>
+        <button type="button" className={menu === "muffinMenu" ? menuBtnActive : menuBtn} onClick={() => getMuffinMenu()}>
           Muffins & Scones
         </button>
-        <button type="button" className={ca} onClick={() => getCakesMenu()}>
+        <button type="button" className={menu === "cakesMenu" ? menuBtnActive : menuBtn} onClick={() => getCakesMenu()}>
           Loaves & Cakes
         </button>
-        <button type="button" className={br} onClick={() => getBreadMenu()}>
+        <button type="button" className={menu === "breadMenu" ? menuBtnActive : menuBtn} onClick={() => getBreadMenu()}>
           Bagels & Bread
         </button>
-        <button type="button" className={dn} onClick={() => getDoughnutsMenu()}>
+        <button type="button" className={menu === "doughnutsMenu" ? menuBtnActive : menuBtn} onClick={() => getDoughnutsMenu()}>
           Doughnuts & SweetRolls
         </button>
-        <button type="button" className={bw} onClick={() => getBrowniesMenu()}>
+        <button type="button" className={menu === "browniesMenu" ? menuBtnActive : menuBtn} onClick={() => getBrowniesMenu()}>
           Brownies, Cookies, & Bars
         </button>
-        <button type="button" className={sd} onClick={() => getSandwichMenu()}>
+        <button type="button" className={menu === "sandwichMenu" ? menuBtnActive : menuBtn} onClick={() => getSandwichMenu()}>
           Breakfast Sandwiches
         </button>
       </div>
@@ -140,16 +130,16 @@ export const PosSideNav = () => {
   const BeansTab = () => {
     return (
       <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
-        <button type="button" className={cc} onClick={() => getCoreCoffeeMenu()}>
+        <button type="button" className={menu === "coreCoffeeMenu" ? menuBtnActive : menuBtn} onClick={() => getCoreCoffeeMenu()}>
           Caf
         </button>
-        <button type="button" className={ca} onClick={() => getCakesMenu()}>
+        <button type="button" className={menu === "cakesMenu" ? menuBtnActive : menuBtn} onClick={() => getCakesMenu()}>
           Decaf
         </button>
-        <button type="button" className={br} onClick={() => getBreadMenu()}>
+        <button type="button" className={menu === "reserveMenu" ? menuBtnActive : menuBtn} onClick={() => getBreadMenu()}>
           Reserve
         </button>
-        <button type="button" className={dn} onClick={() => getDoughnutsMenu()}>
+        <button type="button" className={menu === "pregroundMenu" ? menuBtnActive : menuBtn} onClick={() => getDoughnutsMenu()}>
           Pre-Ground
         </button>
       </div>
@@ -159,28 +149,27 @@ export const PosSideNav = () => {
   const MiscTab = () => {
     return (
       <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
-        <button type="button" className={ly} onClick={() => getLoyaltyMenu()}>
+        <button type="button" className={menu === "loyaltyMenu" ? menuBtnActive : menuBtn} onClick={() => getLoyaltyMenu()}>
          Loyalty Card
         </button>
-        <button type="button" className={ca} onClick={() => getBulkMenu()}>
+        <button type="button" className={menu === "bulkMenu" ? menuBtnActive : menuBtn} onClick={() => getBulkMenu()}>
           Bulk
         </button>
-        <button type="button" className={br} onClick={() => getNewsMenu()}>
+        <button type="button" className={menu === "newspaperMenu" ? menuBtnActive : menuBtn} onClick={() => getNewsMenu()}>
           Newspapers
         </button>
-        <button type="button" className={dn} onClick={() => getDonationsMenu()}>
+        <button type="button" className={menu === "donationsMenu" ? menuBtnActive : menuBtn} onClick={() => getDonationsMenu()}>
           Donations
         </button>
-        <button type="button" className={bw} onClick={() => getTestMenu()}>
+        <button type="button" className={menu === "testMenu" ? menuBtnActive : menuBtn} onClick={() => getTestMenu()}>
           Non-Drink Test
         </button>
-        <button type="button" className={sd} onClick={() => getTestMenu()}>
+        <button type="button" className={menu === "testMenu2" ? menuBtnActive : menuBtn} onClick={() => getTestMenu2()}>
           Test Items
         </button>
       </div>
     );
   };
-
   // top nav that that controls sidenav tabs rendered
   switch (category) {
     case "DrinksTab":

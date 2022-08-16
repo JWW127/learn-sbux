@@ -30,11 +30,7 @@ import {
         <PurpleBtn label="Cookie Pop"/>
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
-        <OffBtnComponent label="" />
+        <div className="basis-full"></div>
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
