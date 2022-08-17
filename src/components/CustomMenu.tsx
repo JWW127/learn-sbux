@@ -11,7 +11,7 @@ import {
 
  const CustomMenu = () => {
   return (
-    <div className="h-full basis-[85%] p-1 py-2 gap-y-1 bg-white flex flex-wrap justify-around">
+    <div className="h-full basis-[85%] sm:p-0 sm:py-0 lg:p-1 lg:py-2 sm:gap-y-0 sm:text-xs lg:gap-y-1 bg-white flex flex-wrap justify-around">
       <BlackBtn label="No" />
       <BlackBtn label="No" />
       <OffBtnComponent label="" />
@@ -21,7 +21,7 @@ import {
       <BlueBtn label="Ice" />
       <BlueBtn label="Water" />
       <BlueBtn label="W.C" />
-      <BlueBtn label="Vanilla S.C" />
+      <BlueBtn label="V.S.C" />
       <OrangeBtn label="Stevia" />
       <OrangeBtn label="Honey" />
       <OrangeBtn label="Agave" />
@@ -34,32 +34,32 @@ import {
       <PurpleBtn label="Banana" />
       <PurpleBtn label="STR Puree" />
       <PurpleBtn label="Frap Chips" />
-      <PurpleBtn label="Vanilla Bean" />
+      <PurpleBtn label="V.Bean" />
       <RoseBtn label="Matcha" />
       <GreenBtn label="Mocha Driz" />
-      <GreenBtn label="Caramel Driz" />
+      <GreenBtn label="Drizzle" />
       <GreenBtn label="No Topping" />
-      <GreenBtn label="Coconut Flake" />
-      <PurpleBtn label="Blueberries" />
+      <GreenBtn label="Coconut" />
+      <PurpleBtn label="Bluebrry" />
       <OffBtnComponent label="" />
-      <OrangeBtn label="BlckTea Base" />
-      <OrangeBtn label="GrnTea Base" />
-      <OrangeBtn label="Passion Base" />
+      <OrangeBtn label="B-Tea Base" />
+      <OrangeBtn label="G-Tea Base" />
+      <OrangeBtn label="P-Tea Base" />
       <OrangeBtn label="V.Brry Base" />
       <OrangeBtn label="Acai Base" />
-      <OrangeBtn label="Dragon Base" />
+      <OrangeBtn label="Drgn Base" />
       <BlueBtn label="Foam" />
       <BlueBtn label="With Room" />
       <BlueBtn label="Cold Foam" />
       <BlueBtn label="VSC C.Foam" />
       <OrangeBtn label="Kiwi Base" />
-      <YellowBtn label="Lemonade" />
+      <YellowBtn label="LMNDE" />
       <GreenBtn label="Extra Hot" />
       <GreenBtn label="Warm" />
       <GreenBtn label="Wet" />
       <GreenBtn label="Dry" />
       <BlackBtn label="Custom" />
-      <BlackBtn label="More Custom" />
+      <BlackBtn label="Custom 2" />
     </div>
   );
 };
