@@ -6,10 +6,13 @@ const PosTopNav = () => {
   const miscCategory = useStore((state) => state.miscCategory);
   const beansCategory = useStore((state) => state.beansCategory);
   const rtdCategory = useStore((state) => state.rtdCategory);
+  const funcsCategory = useStore((state) => state.funcsCategory)
   const category = useStore((state) => state.category);
 
   const darkTopBtns =
     "w-[10vw] h-[80%] shadow-inner shadow-lg shadow-stone-200  bg-stone-800 active:bg-stone-900 active:shadow-stone-900 rounded-xl text-white";
+  const darkTopBtnsActive =
+    "w-[10vw] h-[80%] shadow-inner shadow-lg shadow-stone-800  bg-stone-200 rounded-xl text-green-600";
   const greenTopBtns =
     "w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-green-600 active:bg-stone-300 active:shadow-gray-900 rounded-[50%]";
   const greenTopBtnsActive =
@@ -23,7 +26,11 @@ const PosTopNav = () => {
       <button type="button" className={darkTopBtns}>
         Tender
       </button>
-      <button type="button" className={darkTopBtns}>
+      <button 
+        type="button" 
+        className={category === "FuncsTab" ? darkTopBtnsActive : darkTopBtns} 
+        onClick={() => funcsCategory()}
+      >
         Functions
       </button>
       <button

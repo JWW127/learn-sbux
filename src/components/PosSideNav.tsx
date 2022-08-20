@@ -22,6 +22,7 @@ export const PosSideNav = () => {
   const getTestMenu2 = useStore((state) => state.testMenu2)
   const getCoreCoffeeMenu = useStore((state) => state.coreCoffeeMenu)
   const getRtdMenu = useStore((state) => state.rtdMenu)
+  const getSystemFuncsMenu = useStore((state) => state.systemFuncsMenu)
 
   let tab;
 
@@ -170,6 +171,16 @@ export const PosSideNav = () => {
       </div>
     );
   };
+
+  const FuncsTab = () => {
+    return (
+      <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
+        <button type="button" className={menu === "systemFuncsMenu" ? menuBtnActive : menuBtn} onClick={() => getSystemFuncsMenu()}>
+          Case Items
+        </button>
+      </div>
+    );
+  };
   // top nav that that controls sidenav tabs rendered
   switch (category) {
     case "DrinksTab":
@@ -186,6 +197,9 @@ export const PosSideNav = () => {
       break;
     case "MiscTab":
       tab = <MiscTab />;
+      break;
+    case "FuncsTab":
+      tab = <FuncsTab />;
       break;
     default:
       tab = <DrinksTab />;

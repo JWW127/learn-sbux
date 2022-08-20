@@ -40,6 +40,7 @@ type State = {
   decafMenu: () => void;
   reserveMenu: () => void;
   pregroundMenu: () => void;
+  systemFuncsMenu: () => void;
   icedDrink: (cd: Partial<CurrentDrink>, ice: string) => void;
   sizeDrink: (cd: Partial<CurrentDrink>, sizing: string) => void;
   hotDrink: () => void;
@@ -48,6 +49,7 @@ type State = {
   miscCategory: () => void;
   beansCategory: () => void;
   rtdCategory: () => void;
+  funcsCategory: () => void;
 };
 
 export const useStore = create<State>((set) => ({
@@ -59,6 +61,7 @@ export const useStore = create<State>((set) => ({
   miscCategory: () => set({ category: "MiscTab", menu: "loyaltyMenu" }),
   beansCategory: () => set({ category: "BeansTab", menu: "coreCoffeeMenu" }),
   rtdCategory: () => set({ category: "RtdTab", menu: "rtdMenu" }),
+  funcsCategory: () => set({ category: "FuncsTab", menu: "systemFuncsMenu" }),
   //DrinkTab Menus
   drinkSizeMenu: () => set({ category: "DrinksTab", menu: "drinkSizeMenu" }),
   syrupMenu: () => set({ category: "DrinksTab", menu: "syrupMenu" }),
@@ -94,6 +97,8 @@ export const useStore = create<State>((set) => ({
   sizeDrink: (currentDrink, sizing) =>
     set({ currentDrink: { ...currentDrink, size: sizing } }),
   hotDrink: () => set({ currentDrink: { iced: "Hot" } }),
-  //RtdTabe Menus
+  //RtdTab Menus
   rtdMenu: () => set({ category: "RtdTab", menu: "rtdMenu" }),
+  //FunctionsTab Menus
+  systemFuncsMenu: () => set({ menu: "systemFuncsMenu" }),
 }));

@@ -27,6 +27,7 @@ const DynamicDonationsMenu = dynamic(()=> import('./DonationsMenu'), {suspense: 
 const DynamicTestMenu = dynamic(() =>  import('./TestMenu'), {suspense: false})
 const DynamicCoreCoffeeMenu = dynamic(() => import('./CoreCoffeeMenu'), {suspense: false})
 const DynamicRtdMenu = dynamic(() => import('./RtdMenu'), {suspense: false})
+const DynamicSystemFuncsMenu = dynamic(() => import('./SystemFuncsMenu'), {suspense: false})
 
 
 const MainMenu = () => {
@@ -102,6 +103,9 @@ const MainMenu = () => {
       break;
     case "rtdMenu":
     currentMenu = <DynamicRtdMenu />;
+      break;
+    case "systemFuncsMenu":
+    currentMenu = <DynamicSystemFuncsMenu />;
       break;
     default:
       currentMenu = <DrinkSizeMenu />;
