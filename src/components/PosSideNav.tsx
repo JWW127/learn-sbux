@@ -174,9 +174,9 @@ export const PosSideNav = () => {
 
   const FuncsTab = () => {
     return (
-      <div className="bg-neutral-500 basis-[15%] flex flex-col gap-1 pr-4 pb-4">
+      <div className="bg-neutral-500 basis-[15%] flex flex-col flex-wrap gap-1 pr-4 pb-4">
         <button type="button" className={menu === "systemFuncsMenu" ? menuBtnActive : menuBtn} onClick={() => getSystemFuncsMenu()}>
-          Case Items
+          Store Functions
         </button>
       </div>
     );
