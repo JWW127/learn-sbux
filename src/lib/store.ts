@@ -14,6 +14,7 @@ type State = {
   category: string;
   menu: string;
   currentDrink: Partial<CurrentDrink>;
+  currentOrdedr: Partial<CurrentDrink>[];
   drinkSizeMenu: () => void;
   syrupMenu: () => void;
   milkMenu: () => void;
@@ -56,6 +57,7 @@ export const useStore = create<State>((set) => ({
   category: "DrinksTab",
   menu: "drinkSizeMenu",
   currentDrink: {},
+  currentOrder: [],
   drinkCategory: () => set({ category: "DrinksTab", menu: "drinkSizeMenu" }),
   foodCategory: () => set({ category: "FoodTab", menu: "muffinMenu" }),
   miscCategory: () => set({ category: "MiscTab", menu: "loyaltyMenu" }),
