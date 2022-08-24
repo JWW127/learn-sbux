@@ -2,7 +2,7 @@ import { RiLock2Fill } from "react-icons/ri";
 
 const OrderBoxMenu = () => {
   return (
-    <div className="flex flex-wrap font-semibold bg-neutral-600 h-2/5">
+    <div className="flex flex-wrap pb-1 font-semibold bg-neutral-600 h-2/5">
       <div className="flex flex-wrap h-full pt-2 basis-full">
         <button type="button" className="w-[6vw] basis-1/5 h-1/6 p-1 text-sm shadow-inner shadow-lg shadow-stone-200 bg-orange-300 active:bg-green-700 active:shadow-stone-900 rounded-[50%] ">
           Quantity

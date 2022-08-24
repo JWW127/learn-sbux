@@ -7,7 +7,7 @@ import {
   BlackBtn,
 } from "./MenuButtons";
 
- const BlendedMenu = () => {
+const BlendedMenu = () => {
   return (
     <div className="h-full flex flex-wrap basis-[85%] bg-white">
       {" "}
@@ -48,4 +48,4 @@ import {
   );
 };
 
-export default BlendedMenu
+export default BlendedMenu;

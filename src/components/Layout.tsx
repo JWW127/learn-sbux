@@ -7,7 +7,7 @@ interface LayoutProps {
 export const Layout = (props: LayoutProps) => {
   return (
     <>
-      <nav className="h-[3vh] py-6 text-white bg-stone-900 shadow-lg shadow-gray-500 min-w-screen">
+      <nav className="h-[2vh] py-6 text-white bg-black border-b-2 border-green-900 text-lg shadow-lg shadow-gray-500 min-w-screen">
         <ul className="flex items-center justify-around h-full">
           <h2 className="font-mono text-xl text-yellow-400 basis-1/2 hover:text-white">
             <Link href="/">

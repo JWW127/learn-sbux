@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         san: ["Roboto", "ui-sans-serif", "-apple-system"],
       },
+      backgroundImage: {
+        "hero-pattern": "url('./public/sign1920blur.jpg')",
+      },
     },
   },
   plugins: [],
