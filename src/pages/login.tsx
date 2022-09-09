@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+//Todo: standard simple login page that links to User Dashboard and gives accesses to tools
+
 const Login = () => {
   return (
     <div>

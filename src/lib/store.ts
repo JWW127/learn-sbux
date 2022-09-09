@@ -14,7 +14,7 @@ type State = {
   category: string;
   menu: string;
   currentDrink: Partial<CurrentDrink>;
-  currentOrdedr: Partial<CurrentDrink>[];
+  currentOrder: Partial<CurrentDrink>[];
   drinkSizeMenu: () => void;
   syrupMenu: () => void;
   milkMenu: () => void;

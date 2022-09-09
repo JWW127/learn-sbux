@@ -1,4 +1,5 @@
 import { useStore } from "./../lib/store";
+ //Todo: Logic for next drink button, should reset currentdrink store
 
 export const PosBottomNav = () => {
   const menu = useStore((state) => state.menu)

@@ -1,7 +1,11 @@
-import Head from "next/head"
+import Head from "next/head";
+
+//Todo: sqlite db with all the drinks
+//Todo: work on page design
+
 const Drinks = () => {
-   return (
-       <div>
+  return (
+    <div>
       <Head>
         <title>Learn Sbux</title>
         <meta name="learn sbux workflow" content="sbux training app" />
@@ -11,9 +15,7 @@ const Drinks = () => {
         <h1 className="">hello world</h1>
       </main>
     </div>
+  );
+};
 
-   )
-} 
-
-export default Drinks
-
+export default Drinks;

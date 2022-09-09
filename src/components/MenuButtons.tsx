@@ -4,6 +4,8 @@ interface BtnProps {
   click?: () => void;
 }
 
+//Todo: We need to refactor into ONE button that takes uses props.design as className
+
 //These buttons are only to be used with the main menu like DrinkSizeMenu, BlendedMenu, EspMenu etc. cannot be used with nav or menubox
 export const OffBtnComponent = (props: BtnProps) => {
   return (

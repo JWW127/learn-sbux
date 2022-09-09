@@ -1,7 +1,12 @@
-import Head from "next/head"
+import Head from "next/head";
+
+//Todo: Add questions to database
+//Todo: Logic for generating test
+//Todo: Logic for grading and storing test
+
 const Quiz = () => {
-   return (
-       <div>
+  return (
+    <div>
       <Head>
         <title>SBUX Quiz</title>
         <meta name="learn sbux workflow" content="sbux training app" />
@@ -11,8 +16,7 @@ const Quiz = () => {
         <h1 className="">Quiz page</h1>
       </main>
     </div>
+  );
+};
 
-   )
-} 
-
-export default Quiz
+export default Quiz;
