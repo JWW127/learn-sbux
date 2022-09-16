@@ -17,8 +17,8 @@ export const PosBottomNav = () => {
 
   return (
     <div className="flex flex-wrap pb-2 h-1/5 bg-neutral-500">
-      <div className="flex justify-center h-14 basis-full">
-        <div className="flex justify-center gap-2 basis-5/6">
+      <div className="flex justify-center h-[45%] basis-full">
+        <div className="flex justify-center gap-2 h-4/6 basis-5/6">
           <button type="button" className={menu === "brewMenu" ? bottomTabsActive: bottomTabs} onClick={() => getBrewMenu()}>
             Brewed
           </button>
@@ -40,7 +40,7 @@ export const PosBottomNav = () => {
           <div className="w-12 h-6 border-2 border-gray-900 bg-stone-400"></div>
         </div>
       </div>
-      <div className="flex justify-around pt-1 h-1/2 basis-full">
+      <div className="flex justify-around pt-2 pb-1 h-1/2 basis-full">
         <button type="button" className={btnDark}>Item Availability</button>
         <button type="button" className={btnDark}>SKU Entry</button>
         <button type="button" className={btnDark}>Copy Drink</button>
