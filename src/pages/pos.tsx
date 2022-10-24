@@ -25,17 +25,17 @@ const Pos = () => {
       </Head>
 
       <main>
-        <div className="flex flex-wrap content-start w-full">
+        <div className="flex w-full flex-wrap content-start">
           <Suspense fallback={`Loading ...`}>
             <DynamicTopNav />
           </Suspense>
-          <div className="h-[86vh] px-3 bg-neutral-600 lg:border-x-6 border-stone-500 basis-1/3 flex-col">
+          <div className="lg:border-x-6 h-[86vh] basis-1/3 flex-col border-stone-500 bg-neutral-600 px-3">
             <Suspense fallback={`Loading ...`}>
               <DynamicOrderBox />
               <DynamicOrderBoxMenu />
             </Suspense>
           </div>
-          <div className="px-2 bg-neutral-500 basis-2/3">
+          <div className="basis-2/3 bg-neutral-500 px-2">
             <Suspense fallback={`Loading ...`}>
               <DynamicMainMenu />
             </Suspense>
