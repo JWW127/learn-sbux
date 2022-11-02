@@ -10,7 +10,7 @@ import {
 
 const SyrupMenu = () => {
   return (
-    <div className="h-full flex flex-wrap p-1 py-2 justify-around gap-4 basis-[85%] bg-white">
+    <div className="flex h-full basis-[85%] flex-wrap justify-around gap-4 bg-white p-1 py-2">
       <BlackBtn label="No" />
       <BlackBtn label="Sub" />
       <YellowBtn label="Pumps" />

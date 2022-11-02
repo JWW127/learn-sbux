@@ -1,13 +1,10 @@
-import {
-  LightAmberBtn,
-  OffBtnComponent,
-} from "./MenuButtons";
+import { LightAmberBtn, OffBtnComponent } from "./MenuButtons";
 
- const TestMenu = () => {
+const TestMenu = () => {
   return (
-    <div className="h-full flex flex-wrap basis-[85%] bg-white">
-      <div className="flex flex-col flex-wrap justify-around w-full p-14 text-md gap-y-2">
-        <LightAmberBtn label="Test Item"/>
+    <div className="flex h-full basis-[85%] flex-wrap bg-white">
+      <div className="text-md flex w-full flex-col flex-wrap justify-around gap-y-2 p-14">
+        <LightAmberBtn label="Test Item" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
@@ -17,8 +14,4 @@ import {
   );
 };
 
-export default TestMenu
-
-
-
-
+export default TestMenu;

@@ -9,9 +9,9 @@ import {
   RoseBtn,
 } from "./MenuButtons";
 
- const CustomMenu = () => {
+const CustomMenu = () => {
   return (
-    <div className="h-full basis-[85%] sm:p-0 sm:py-0 lg:p-1 lg:py-2 sm:gap-y-0 sm:text-xs lg:gap-y-1 bg-white flex flex-wrap justify-around">
+    <div className="flex h-full basis-[85%] flex-wrap justify-around bg-white sm:gap-y-0 sm:p-0 sm:py-0 sm:text-xs lg:gap-y-1 lg:p-1 lg:py-2">
       <BlackBtn label="No" />
       <BlackBtn label="No" />
       <OffBtnComponent label="" />
@@ -64,4 +64,4 @@ import {
   );
 };
 
-export default CustomMenu
+export default CustomMenu;

@@ -1,10 +1,9 @@
-import {  OffBtnComponent, OrangeBtn, BlackBtn } from "./MenuButtons";
+import { OffBtnComponent, OrangeBtn, BlackBtn } from "./MenuButtons";
 
 const CoreCoffeeMenu = () => {
-
   return (
-    <div className="h-full flex flex-wrap basis-[85%] bg-white">
-      <div className="flex flex-wrap justify-center w-full py-2 text-sm gap-5">
+    <div className="flex h-full basis-[85%] flex-wrap bg-white">
+      <div className="flex w-full flex-wrap justify-center gap-5 py-2 text-sm">
         <BlackBtn label="1/2 Lb." />
         <BlackBtn label="1 Lb" />
         <OffBtnComponent label="" />

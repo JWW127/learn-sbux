@@ -4,7 +4,7 @@ const OrderBox = () => {
   const { iced, size } = useStore((state) => state.currentDrink);
 
   return (
-    <div className="flex flex-col pt-2 overflow-y-scroll text-center bg-yellow-100 h-3/5 basis-full">
+    <div className="flex h-3/5 basis-full flex-col overflow-y-scroll bg-yellow-100 pt-2 text-center">
       <ul className="list-none">
         <li>{iced}</li>
         <li>{size}</li>

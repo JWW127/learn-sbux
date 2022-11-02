@@ -11,9 +11,9 @@ import {
 
 const EspMenu = () => {
   return (
-    <div className="h-full flex flex-wrap basis-[85%] bg-white">
+    <div className="flex h-full basis-[85%] flex-wrap bg-white">
       {" "}
-      <div className="flex flex-wrap justify-around py-2 text-sm gap-x-1 gap-y-4">
+      <div className="flex flex-wrap justify-around gap-x-1 gap-y-4 py-2 text-sm">
         <PurpleBtn label="Americano" />
         <PurpleBtn label="Espress" />
         <PurpleBtn label="EspMacchiato" />

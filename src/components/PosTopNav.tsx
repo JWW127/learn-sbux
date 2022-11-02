@@ -6,7 +6,7 @@ const PosTopNav = () => {
   const miscCategory = useStore((state) => state.miscCategory);
   const beansCategory = useStore((state) => state.beansCategory);
   const rtdCategory = useStore((state) => state.rtdCategory);
-  const funcsCategory = useStore((state) => state.funcsCategory)
+  const funcsCategory = useStore((state) => state.funcsCategory);
   const category = useStore((state) => state.category);
 
   const darkTopBtns =
@@ -19,16 +19,16 @@ const PosTopNav = () => {
     "w-[12vw] h-[70%]  shadow-inner shadow-gray-200 drop-shadow-xl bg-stone-300 active:bg-stone-300 active:shadow-gray-900 rounded-[50%]";
 
   return (
-    <div className="h-[10vh] basis-full bg-neutral-500 flex justify-around items-center text-lg">
+    <div className="flex h-[10vh] basis-full items-center justify-around bg-neutral-500 text-lg">
       <button type="button" className={darkTopBtns}>
         Order
       </button>
       <button type="button" className={darkTopBtns}>
         Tender
       </button>
-      <button 
-        type="button" 
-        className={category === "FuncsTab" ? darkTopBtnsActive : darkTopBtns} 
+      <button
+        type="button"
+        className={category === "FuncsTab" ? darkTopBtnsActive : darkTopBtns}
         onClick={() => funcsCategory()}
       >
         Functions
@@ -72,4 +72,4 @@ const PosTopNav = () => {
   );
 };
 
-export default PosTopNav
+export default PosTopNav;

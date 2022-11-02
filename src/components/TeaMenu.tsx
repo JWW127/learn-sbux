@@ -6,13 +6,13 @@ import {
   GreenBtn,
 } from "./MenuButtons";
 
- const TeaMenu = () => {
+const TeaMenu = () => {
   return (
-    <div className="h-full flex flex-wrap basis-[85%] bg-white">
+    <div className="flex h-full basis-[85%] flex-wrap bg-white">
       {" "}
-      <div className="flex flex-wrap justify-around py-2 text-sm gap-x-1 gap-y-4">
+      <div className="flex flex-wrap justify-around gap-x-1 gap-y-4 py-2 text-sm">
         <YellowBtn label="Chai" />
-        <GreenBtn label="Matcha"/>
+        <GreenBtn label="Matcha" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
         <OffBtnComponent label="" />
@@ -51,4 +51,4 @@ import {
   );
 };
 
-export default TeaMenu
+export default TeaMenu;

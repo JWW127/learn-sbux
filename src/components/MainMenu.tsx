@@ -1,34 +1,71 @@
-import dynamic from 'next/dynamic'
-import { Suspense } from 'react';
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
 import { useStore } from "../lib/store";
 import { PosBottomNav } from "./PosBottomNav";
 import { DrinkSizeMenu } from "./DrinkSizeMenu";
 import { PosSideNav } from "./PosSideNav";
 
 //lazy load
-const DynamicSyrupMenu = dynamic(() => import('./SyrupMenu'), {suspense: false})
-const DynamicMilkMenu = dynamic(() => import('./MilkMenu'), {suspense: false})
-const DynamicCustomMenu = dynamic(() => import('./CustomMenu'), {suspense: false})
-const DynamicBlendedMenu = dynamic(() => import('./BlendedMenu'), {suspense: false})
-const DynamicBrewMenu = dynamic(() => import('./BrewMenu'), {suspense: false})
-const DynamicEspMenu = dynamic(() => import('./EspMenu'), {suspense: false})
-const DynamicOtherMenu = dynamic(() => import('./OtherMenu'), {suspense: false})
-const DynamicTeaMenu = dynamic(() => import('./TeaMenu'), {suspense: false})
-const DynamicMuffinMenu = dynamic(() => import('./MuffinMenu'), {suspense: false})
-const DynamicCakesMenu = dynamic(() => import('./CakesMenu'), {suspense: false})
-const DynamicBreadMenu = dynamic(() => import('./BreadMenu'), {suspense: false})
-const DynamicDoughnutsMenu = dynamic(() => import('./DoughnutsMenu'), {suspense: false})
-const DynamicBrowniesMenu = dynamic(() => import('./BrowniesMenu'), {suspense: false})
-const DynamicSandwichMenu = dynamic(() => import('./SandwichMenu'), {suspense: false})
-const DynamicLoyaltyMenu = dynamic(() => import('./LoyaltyMenu'), {suspense: false})
-const DynamicBulkMenu = dynamic(() => import('./BulkMenu'), {suspense: false})
-const DynamicNewspaperMenu = dynamic(() => import('./NewspaperMenu'), {suspense: false})
-const DynamicDonationsMenu = dynamic(()=> import('./DonationsMenu'), {suspense: false})
-const DynamicTestMenu = dynamic(() =>  import('./TestMenu'), {suspense: false})
-const DynamicCoreCoffeeMenu = dynamic(() => import('./CoreCoffeeMenu'), {suspense: false})
-const DynamicRtdMenu = dynamic(() => import('./RtdMenu'), {suspense: false})
-const DynamicSystemFuncsMenu = dynamic(() => import('./SystemFuncsMenu'), {suspense: false})
-
+const DynamicSyrupMenu = dynamic(() => import("./SyrupMenu"), {
+  suspense: false,
+});
+const DynamicMilkMenu = dynamic(() => import("./MilkMenu"), {
+  suspense: false,
+});
+const DynamicCustomMenu = dynamic(() => import("./CustomMenu"), {
+  suspense: false,
+});
+const DynamicBlendedMenu = dynamic(() => import("./BlendedMenu"), {
+  suspense: false,
+});
+const DynamicBrewMenu = dynamic(() => import("./BrewMenu"), {
+  suspense: false,
+});
+const DynamicEspMenu = dynamic(() => import("./EspMenu"), { suspense: false });
+const DynamicOtherMenu = dynamic(() => import("./OtherMenu"), {
+  suspense: false,
+});
+const DynamicTeaMenu = dynamic(() => import("./TeaMenu"), { suspense: false });
+const DynamicMuffinMenu = dynamic(() => import("./MuffinMenu"), {
+  suspense: false,
+});
+const DynamicCakesMenu = dynamic(() => import("./CakesMenu"), {
+  suspense: false,
+});
+const DynamicBreadMenu = dynamic(() => import("./BreadMenu"), {
+  suspense: false,
+});
+const DynamicDoughnutsMenu = dynamic(() => import("./DoughnutsMenu"), {
+  suspense: false,
+});
+const DynamicBrowniesMenu = dynamic(() => import("./BrowniesMenu"), {
+  suspense: false,
+});
+const DynamicSandwichMenu = dynamic(() => import("./SandwichMenu"), {
+  suspense: false,
+});
+const DynamicLoyaltyMenu = dynamic(() => import("./LoyaltyMenu"), {
+  suspense: false,
+});
+const DynamicBulkMenu = dynamic(() => import("./BulkMenu"), {
+  suspense: false,
+});
+const DynamicNewspaperMenu = dynamic(() => import("./NewspaperMenu"), {
+  suspense: false,
+});
+const DynamicDonationsMenu = dynamic(() => import("./DonationsMenu"), {
+  suspense: false,
+});
+const DynamicTestMenu = dynamic(() => import("./TestMenu"), {
+  suspense: false,
+});
+const DynamicCoreCoffeeMenu = dynamic(() => import("./CoreCoffeeMenu"), {
+  suspense: false,
+});
+const DynamicRtdMenu = dynamic(() => import("./RtdMenu"), { suspense: false });
+const DynamicSystemFuncsMenu = dynamic(() => import("./SystemFuncsMenu"), {
+  suspense: false,
+});
 
 const MainMenu = () => {
   const menu = useStore((state) => state.menu);
@@ -64,48 +101,48 @@ const MainMenu = () => {
       break;
     case "muffinMenu":
       currentMenu = <DynamicMuffinMenu />;
-    break;
+      break;
     case "cakesMenu":
-    currentMenu = <DynamicCakesMenu />;
+      currentMenu = <DynamicCakesMenu />;
       break;
     case "breadMenu":
-    currentMenu = <DynamicBreadMenu />;
+      currentMenu = <DynamicBreadMenu />;
       break;
     case "doughnutsMenu":
-    currentMenu = <DynamicDoughnutsMenu />;
+      currentMenu = <DynamicDoughnutsMenu />;
       break;
     case "browniesMenu":
-    currentMenu = <DynamicBrowniesMenu />;
+      currentMenu = <DynamicBrowniesMenu />;
       break;
     case "sandwichMenu":
-    currentMenu = <DynamicSandwichMenu />;
+      currentMenu = <DynamicSandwichMenu />;
       break;
     case "loyaltyMenu":
-    currentMenu = <DynamicLoyaltyMenu />;
+      currentMenu = <DynamicLoyaltyMenu />;
       break;
     case "newspaperMenu":
-    currentMenu = <DynamicNewspaperMenu />;
+      currentMenu = <DynamicNewspaperMenu />;
       break;
     case "donationsMenu":
-    currentMenu = <DynamicDonationsMenu />;
+      currentMenu = <DynamicDonationsMenu />;
       break;
     case "bulkMenu":
-    currentMenu = <DynamicBulkMenu />;
+      currentMenu = <DynamicBulkMenu />;
       break;
     case "testMenu":
-    currentMenu = <DynamicTestMenu />;
+      currentMenu = <DynamicTestMenu />;
       break;
     case "testMenu2":
-    currentMenu = <DynamicTestMenu />;
+      currentMenu = <DynamicTestMenu />;
       break;
     case "coreCoffeeMenu":
-    currentMenu = <DynamicCoreCoffeeMenu />;
+      currentMenu = <DynamicCoreCoffeeMenu />;
       break;
     case "rtdMenu":
-    currentMenu = <DynamicRtdMenu />;
+      currentMenu = <DynamicRtdMenu />;
       break;
     case "systemFuncsMenu":
-    currentMenu = <DynamicSystemFuncsMenu />;
+      currentMenu = <DynamicSystemFuncsMenu />;
       break;
     default:
       currentMenu = <DrinkSizeMenu />;
@@ -113,11 +150,9 @@ const MainMenu = () => {
   }
 
   return (
-    <div className="flex flex-col h-full ">
-      <div className="flex flex-row h-4/5">
-        <Suspense fallback={`loading...`}>
-        {currentMenu}
-        </Suspense >
+    <div className="flex h-full flex-col ">
+      <div className="flex h-4/5 flex-row">
+        <Suspense fallback={`loading...`}>{currentMenu}</Suspense>
         <PosSideNav />
       </div>
       <PosBottomNav />
@@ -125,4 +160,4 @@ const MainMenu = () => {
   );
 };
 
-export default MainMenu
+export default MainMenu;
