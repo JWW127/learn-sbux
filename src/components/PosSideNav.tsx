@@ -37,28 +37,29 @@ export const PosSideNav = () => {
       ? "flex flex-col items-center italic shadow-md rounded-tr-xl bg-stone-300 active:bg-stone-200 rounded-br-xl basis-2/5"
       : "flex flex-col items-center italic shadow-md rounded-tr-xl bg-stone-400 active:bg-stone-200 rounded-br-xl basis-2/5";
 
+// TODO: refactor into own component
   const DrinksTab = () => {
     return (
       <div className="flex basis-[15%] flex-col gap-1 bg-neutral-500 pr-4">
         <button type="button" className={dsm} onClick={() => getDrinkMenu()}>
-          <ul className="flex h-full w-20 flex-col items-center justify-between p-4">
-            <li className="text-md font-ultralight flex w-20 basis-1/5 flex-wrap items-center justify-center gap-1 italic">
-              <div className="flex h-5 w-5 items-center justify-center border-2 border-gray-600 ">
+          <ul className="flex flex-col items-center justify-between w-20 h-full p-4">
+            <li className="flex flex-wrap items-center justify-center w-20 italic text-md font-ultralight basis-1/5 gap-1">
+              <div className="flex items-center justify-center w-5 h-5 border-2 border-gray-600 ">
                 {drink.iced === "Iced" ? "x" : ""}
               </div>
               Iced
             </li>
-            <li className="flex basis-1/5 flex-col italic">
+            <li className="flex flex-col italic basis-1/5">
               Decaf{" "}
-              <div className="w-18 h-6 rounded-sm border-2 border-gray-600 text-center"></div>
+              <div className="h-6 text-center border-2 border-gray-600 rounded-sm w-18"></div>
             </li>
-            <li className="flex basis-1/5 flex-col italic">
+            <li className="flex flex-col italic basis-1/5">
               Shots{" "}
-              <div className="w-18 h-6 rounded-sm border-2 border-gray-600 text-center"></div>
+              <div className="h-6 text-center border-2 border-gray-600 rounded-sm w-18"></div>
             </li>
-            <li className="flex basis-1/5 flex-col italic">
+            <li className="flex flex-col italic basis-1/5">
               Sizes{" "}
-              <div className="w-18 h-6 rounded-sm border-2 border-gray-600 text-center">
+              <div className="h-6 text-center border-2 border-gray-600 rounded-sm w-18">
                 {drink.size?.slice(0, 2)}
               </div>
             </li>
@@ -69,10 +70,10 @@ export const PosSideNav = () => {
           className={menu === "syrupMenu" ? menuBtnActive : menuBtn}
           onClick={() => getSyrupMenu()}
         >
-          <ul className="flex h-full w-20 flex-col items-center justify-center p-4">
-            <li className="flex flex-col text-center italic">
+          <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
+            <li className="flex flex-col italic text-center">
               Syrup
-              <div className="w-18 h-6 rounded-sm border-2 border-gray-600"></div>
+              <div className="h-6 border-2 border-gray-600 rounded-sm w-18"></div>
             </li>
           </ul>
         </button>
@@ -81,10 +82,10 @@ export const PosSideNav = () => {
           className={menu === "milkMenu" ? menuBtnActive : menuBtn}
           onClick={() => getMilkMenu()}
         >
-          <ul className="flex h-full w-20 flex-col items-center justify-center p-4">
-            <li className="flex flex-col text-center italic">
+          <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
+            <li className="flex flex-col italic text-center">
               Milks
-              <div className="w-18 h-6 rounded-sm border-2 border-gray-600"></div>
+              <div className="h-6 border-2 border-gray-600 rounded-sm w-18"></div>
             </li>
           </ul>
         </button>
@@ -93,10 +94,10 @@ export const PosSideNav = () => {
           className={menu === "customMenu" ? menuBtnActive : menuBtn}
           onClick={() => getCustomMenu()}
         >
-          <ul className="flex h-full w-20 flex-col items-center justify-center p-4">
-            <li className="flex flex-col text-center italic">
+          <ul className="flex flex-col items-center justify-center w-20 h-full p-4">
+            <li className="flex flex-col italic text-center">
               Custom
-              <div className="w-18 h-6 rounded-sm border-2 border-gray-600"></div>
+              <div className="h-6 border-2 border-gray-600 rounded-sm w-18"></div>
             </li>
           </ul>
         </button>
@@ -104,6 +105,7 @@ export const PosSideNav = () => {
     );
   };
 
+// TODO: refactor into own component
   const FoodTab = () => {
     return (
       <div className="flex basis-[15%] flex-col gap-1 bg-neutral-500 pr-4 pb-4">
@@ -153,6 +155,7 @@ export const PosSideNav = () => {
     );
   };
 
+// TODO: refactor into own component
   const RtdTab = () => {
     return (
       <div className="flex basis-[15%] flex-col gap-1 bg-neutral-500 pr-4 pb-4">
@@ -167,6 +170,7 @@ export const PosSideNav = () => {
     );
   };
 
+// TODO: refactor into own component
   const BeansTab = () => {
     return (
       <div className="flex basis-[15%] flex-col gap-1 bg-neutral-500 pr-4 pb-4">
@@ -202,6 +206,7 @@ export const PosSideNav = () => {
     );
   };
 
+// TODO: refactor into own component
   const MiscTab = () => {
     return (
       <div className="flex basis-[15%] flex-col gap-1 bg-neutral-500 pr-4 pb-4">
@@ -251,6 +256,7 @@ export const PosSideNav = () => {
     );
   };
 
+// TODO: refactor into own component
   const FuncsTab = () => {
     return (
       <div className="flex basis-[15%] flex-col flex-wrap gap-1 bg-neutral-500 pr-4 pb-4">
