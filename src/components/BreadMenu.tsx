@@ -3,7 +3,7 @@ import { SkyBtn, OffBtnComponent, PurpleBtn, OrangeBtn } from "./MenuButtons";
 const BreadMenu = () => {
   return (
     <div className="flex h-full basis-[85%] flex-wrap bg-white">
-      <div className="flex w-full flex-wrap justify-around gap-x-1 gap-y-4 py-2 text-sm">
+      <div className="flex flex-wrap justify-around w-full py-2 text-sm gap-x-1 gap-y-4">
         <OrangeBtn label="Plain Bagel" />
         <OrangeBtn label="Plain Bagel" />
         <OrangeBtn label="Plain Bagel" />
