@@ -7,9 +7,9 @@ interface LayoutProps {
 export const Layout = (props: LayoutProps) => {
   return (
     <>
-      <nav className="min-w-screen h-[2vh] border-b-2 border-green-900 bg-black py-6 text-lg text-white shadow-lg shadow-gray-500">
-        <ul className="flex h-full items-center justify-around">
-          <h2 className="basis-1/2 font-mono text-xl text-yellow-400 hover:text-white">
+      <nav className="min-w-screen h-[2vh] border-b-2 border-green-900 bg-black py-6 lg:text-lg text-white shadow-lg shadow-gray-500">
+        <ul className="flex h-full items-center px-2 justify-around gap-4">
+          <h2 className="basis-1/2 font-mono lg:text-xl text-yellow-400 hover:text-white">
             <Link href="/">
               <a>Learn SBUX</a>
             </Link>
